@@ -1,0 +1,2748 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Your Project Title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5/1.4.0/p5.min.js"></script>
+    <!-- Add other p5.js libraries or your own scripts here -->
+  </head>
+  <body>
+    <h1>Your Project</h1>
+    
+    <!-- Hidden Table -->
+    <table id="dataTable" style="display:none;">
+      <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Date</th>
+      <th>Tags</th>
+      <th>Headline</th>
+      <th>Locations</th>
+      <th>Dream Length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>27-Dec-16</td>
+      <td>NASCAR Cocaine Arrest Jail Trial Fear Selfishness Travel Restriction</td>
+      <td>Group at NASCAR Race Busted by Police Face Consequences of Cocaine Deal</td>
+      <td>NASCAR Race Jail Thailand</td>
+      <td>252</td>
+    </tr>
+    <tr>
+      <td>04-Dec-16</td>
+      <td>Rocket Moon Crash Aliens Animals Costumes Fight</td>
+      <td>Dreamers Moon Mission Fails Leads to Extraterrestrial Escapade</td>
+      <td>Orinda Hills Moon intended Alien location</td>
+      <td>169</td>
+    </tr>
+    <tr>
+      <td>28-Nov-16</td>
+      <td>Theater Seafood Unpleasant Dream Bathroom Beach Car Trip Hot Springs</td>
+      <td>Unpleasant Experiences Followed by Soothing Hot Springs Trip in Ocean Parking Adventure</td>
+      <td>Orinda theater Beach with hot springs</td>
+      <td>293</td>
+    </tr>
+    <tr>
+      <td>25-Nov-16</td>
+      <td>Uber Pregnancy Dream Friendship Conflict Adventure Alienation</td>
+      <td>Mysterious Relocation Surprise Pregnancy Alien Killer Seal and Space Wars</td>
+      <td>Concord Okinawa Sacramento Barcelona Walnut Creek Dads House a Church a Party a Shop a Planet a River</td>
+      <td>513</td>
+    </tr>
+    <tr>
+      <td>17-Nov-16</td>
+      <td>Desert Survival Weapons Postapocalyptic Group Strange animals</td>
+      <td>Survival in a PostApocalyptic Desert with Unusual Fauna</td>
+      <td>Forest desert</td>
+      <td>195</td>
+    </tr>
+    <tr>
+      <td>16-Nov-16</td>
+      <td>Camp JET program Friendship Whisky Car crash Steep Roads Divorce Louisiana Sleeping</td>
+      <td>Unexpected Encounters and Climbs During Dream Adventure</td>
+      <td>Sierra mountains Japan Louisiana</td>
+      <td>284</td>
+    </tr>
+    <tr>
+      <td>11-Nov-16</td>
+      <td>Adventure Anxiety Danger Rescue</td>
+      <td>Intense Backpacking Adventure with Chotika Leads to Risk and Dramatic Rescue</td>
+      <td>Camping Trip Cities unspecified California Condo</td>
+      <td>128</td>
+    </tr>
+    <tr>
+      <td>09-Nov-16</td>
+      <td>Travel Money Friend Starbucks Anger Journey</td>
+      <td>Unique Starbucks Money and Annoyance in Room During an Unidentified Journey in Thailand</td>
+      <td>Thailand Dreamers Room</td>
+      <td>83</td>
+    </tr>
+    <tr>
+      <td>08-Nov-16</td>
+      <td>Relationships Fear Finance Violence Conflict</td>
+      <td>Unsettling Discovery of Girlfriends Secret Boyfriend Leads to Contemplation of Relationships Future</td>
+      <td>Myliens house university</td>
+      <td>168</td>
+    </tr>
+    <tr>
+      <td>07-Nov-16</td>
+      <td>Jealousy Party Foreigners Cheating Airbnb</td>
+      <td>Dreamers Jealousy Surfaces amid Moos Airbnb Party and Suspected Infidelity</td>
+      <td>Moos House Unnamed Location</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>22-Oct-16</td>
+      <td>Travel Old Students Tree House Gifts Anger School Time</td>
+      <td>Former Teachers Tense Journey to Okinawa and Mixed Emotions Towards Past and Present</td>
+      <td>Okinawa Tall Tree House School Bus</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <td>20-Oct-16</td>
+      <td>Friendship Rejection Party Selfconsciousness Work Creativity Misfortune Birth Rapid Growth Language Hierarchy Gift</td>
+      <td>A Cascading Journey from Social Gathering to Unexpected Childbirth and Hierarchy Encounters</td>
+      <td>Icekrimski mhs school downtown Davis theater momLarrys house remote place</td>
+      <td>509</td>
+    </tr>
+    <tr>
+      <td>14-Oct-16</td>
+      <td>Relationship Job Assistance Music Dream realization Fantasy Adventure Violence War</td>
+      <td>Adventure and Help in Dreamland</td>
+      <td>Unspecified city Unspecified hotel or apartment Unspecified bar Staircase Forest</td>
+      <td>263</td>
+    </tr>
+    <tr>
+      <td>05-Oct-16</td>
+      <td>School Late for Class Friends Housemates Car Show Mall Accidents Football Meeting</td>
+      <td>Recollections of A Dream</td>
+      <td>DVC School Dreamers House in Japan Mall Miramonte High School</td>
+      <td>563</td>
+    </tr>
+    <tr>
+      <td>29-Sep-16</td>
+      <td>Party Attraction Discomfort Longing Individual Perception</td>
+      <td>Dreamer Flirts with Stranger Faces Discomfort and Longs for Someone</td>
+      <td>America Big House</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>13-Sep-16</td>
+      <td>Camping Helping Driving Racism Language Anxiety High School</td>
+      <td>Discomforting Camping Experience Leads to Risky Driving and Unexpected Racism Meeting</td>
+      <td>Benicia Bridge High School Racists Anonymous meeting train tracks camping place</td>
+      <td>336</td>
+    </tr>
+    <tr>
+      <td>09-Sep-16</td>
+      <td>Politics Dream Rally High school friends Decision making</td>
+      <td>Oscillating between a Lonely ProTrump Rally and an Exciting ProClinton Party in Dream</td>
+      <td>New York city California</td>
+      <td>222</td>
+    </tr>
+    <tr>
+      <td>07-Sep-16</td>
+      <td>Sex Friends Memory Pleasure</td>
+      <td>Frequent Sexual Encounters with Friends and Anonymous Partners</td>
+      <td>Not Mentioned</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>07-Sep-16</td>
+      <td>Pets Death Fear Blame Emotion</td>
+      <td>Dreamer Confronts Petas Death and Deformity in Emotional Outburst</td>
+      <td>The Kenwal house some balcony</td>
+      <td>119</td>
+    </tr>
+    <tr>
+      <td>06-Sep-16</td>
+      <td>Movies Parody Bathroom Discomfort Humor</td>
+      <td>A Trip to the Movie Theater Turns into a Sanitation Nightmare</td>
+      <td>Movie Theater Bathroom</td>
+      <td>124</td>
+    </tr>
+    <tr>
+      <td>03-Sep-16</td>
+      <td>Relationship Jealousy Party Betrayal Violent Imagery</td>
+      <td>Girlfriend Engages in Flirtatious Behaviour and Ends Relationship at Party</td>
+      <td>Party</td>
+      <td>74</td>
+    </tr>
+    <tr>
+      <td>02-Sep-16</td>
+      <td>Mischief Guilt Scorpion Bite Unconsciousness Family Occasion Skipping Responsibility Regret</td>
+      <td>Unintended Consequences</td>
+      <td>Apartment</td>
+      <td>103</td>
+    </tr>
+    <tr>
+      <td>25-Aug-16</td>
+      <td>Murder Fear Deception Anxiety Crime Guilt</td>
+      <td>Disturbing Dream involving Murder and Transporting Illegal Goods</td>
+      <td>Unmentioned House Unmentioned Roadway</td>
+      <td>240</td>
+    </tr>
+    <tr>
+      <td>15-Aug-16</td>
+      <td>Dream Parties Friends Movie watching Hard drives Anxiety Relationship Embarrassment</td>
+      <td>Luxuriant House Parties with Friends and Mysterious Movie Plots</td>
+      <td>Dreamers mom and Larrys house front yard inside the house movie theater in the movie theyre watching</td>
+      <td>256</td>
+    </tr>
+    <tr>
+      <td>12-Aug-16</td>
+      <td>Moving Dream Animals Friends Fear Repayment Impossibilities</td>
+      <td>A Disturbing Return to Davis alongside friends and an eldery pet performing impossible feats</td>
+      <td>Davis West Davis Bangkok</td>
+      <td>117</td>
+    </tr>
+    <tr>
+      <td>28-Jul-16</td>
+      <td>Social Anxiety Misidentification Alienation Futuristic Setting Party Scene Uncertainty</td>
+      <td>Alienation and Discomfort at Futuristic Hilltop Party</td>
+      <td>Kayhans House Community Pools</td>
+      <td>145</td>
+    </tr>
+    <tr>
+      <td>26-Jul-16</td>
+      <td>Elevator Interaction Misunderstanding Communication Teaching Subtle Rejection</td>
+      <td>Unexpected Encounter and Clarification on an Elevator Ride</td>
+      <td>Clayton Valley</td>
+      <td>92</td>
+    </tr>
+    <tr>
+      <td>25-Jul-16</td>
+      <td>Car Driving Travel Spain Communication Confusion</td>
+      <td>Perplexed Journey through Faux Barcelona Reveals Communication Challenges</td>
+      <td>Spain Barcelona</td>
+      <td>118</td>
+    </tr>
+    <tr>
+      <td>10-Jul-16</td>
+      <td>Relationship Breakup Home Family Uncertainty</td>
+      <td>Remembering Past Relationships in Bangkok Condo</td>
+      <td>Dreamers Condo Tannys Condo in Bangkok</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>10-Jul-16</td>
+      <td>Beach House Harassment Protection Boat Failing Class Study</td>
+      <td>Swipe at Harassment  Classroom Struggles  Two Chapters from a Vivid Dream</td>
+      <td>Beach House Boat Class</td>
+      <td>161</td>
+    </tr>
+    <tr>
+      <td>06-Jul-16</td>
+      <td>Podcast Judge John Hodgman Fickett Disagreement Authority</td>
+      <td>Dream Drama Resolved with Podcast Personality Involvement</td>
+      <td>Not mentioned</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>04-Jul-16</td>
+      <td>Summer Camp School Myanmar Drug Deal Reunion Debt Medical School</td>
+      <td>Revisiting Past in Drug Deal Drama and Reunion at Myanmar School Camp</td>
+      <td>Myanmar School</td>
+      <td>139</td>
+    </tr>
+    <tr>
+      <td>03-Jul-16</td>
+      <td>Family Travel Friends Dream Identity Celebrities Pets</td>
+      <td>Dreamers Father Organizes Grand Family and Friends Tour Dreamer Dates Whitney</td>
+      <td>Country Parking Lot</td>
+      <td>180</td>
+    </tr>
+    <tr>
+      <td>03-Jul-16</td>
+      <td>Friendship High School Conversation Skyscraper Memory</td>
+      <td>High School Reminiscing Amidst The City Skies</td>
+      <td>Skyscraper office</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>26-Jun-16</td>
+      <td>Banquet High school friends Celebration Skateboarding</td>
+      <td>The Dreamer Hosts a Festive Banquet with Old Acquaintances</td>
+      <td>NaN</td>
+      <td>135</td>
+    </tr>
+    <tr>
+      <td>26-Jun-16</td>
+      <td>Bangkok Motorcycle Accident Cats Better Call Saul Hotel Wallet Purse</td>
+      <td>Biking Adventure in Bangkok Involves Encounter with Cats and Surprise Wallet Gift</td>
+      <td>Bangkok House with big cats Hotel</td>
+      <td>129</td>
+    </tr>
+    <tr>
+      <td>26-Jun-16</td>
+      <td>Teaching English Student Forgetting Asleep Confusion</td>
+      <td>English Teacher Forgets Students Name and Falls Asleep During Conversation</td>
+      <td>Not mentioned</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <td>26-Jun-16</td>
+      <td>Party Diversity High School Reunion Water Filter Dance</td>
+      <td>A Multicultural Party Escapade Turns Into a High School Reunion</td>
+      <td>Restaurant High School Reunion</td>
+      <td>166</td>
+    </tr>
+    <tr>
+      <td>22-Jun-16</td>
+      <td>Spilling Cleaning Damage Confusion</td>
+      <td>Mysterious Spill Leads to Unexpected Consequences</td>
+      <td>Kitchen Downstairs</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td>15-Jun-16</td>
+      <td>Confusion Lost Meeting Synchronization</td>
+      <td>Lost in the Maze of a Huge Building Misses Important Meeting</td>
+      <td>Huge Building</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <td>10-Jun-16</td>
+      <td>Sleepover First Time Love</td>
+      <td>Dreamer Hosts ààà¹ for FirstTime Sleepover Encounters Emotion of Love</td>
+      <td>Not Mentioned</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>04-Jun-16</td>
+      <td>Sex Distraction Mobile Phone Intimacy</td>
+      <td>Dreamers Sexual Moment Marred by Companions Phone Distraction</td>
+      <td>Not specified</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>30-May-16</td>
+      <td>old friend movie theater missing child mother foreign language loud talking</td>
+      <td>Loud Banter and Forgotten Kid in a Bangkok Movie Theater</td>
+      <td>Bangkok Movie Theater</td>
+      <td>106</td>
+    </tr>
+    <tr>
+      <td>23-May-16</td>
+      <td>Friends Confusion Transportation Housing Relationships</td>
+      <td>An Intricate Dream Packed with Friends Transport Disarray and an Intriguing Living Arrangement</td>
+      <td>Orinda Theater Hatteras Place Downs Sleepy Hallow Area Oakland Hills a Large Flat</td>
+      <td>381</td>
+    </tr>
+    <tr>
+      <td>14-May-16</td>
+      <td>Brothel Teaching Desire Time Constraint</td>
+      <td>Dreamer Entertains Desire in Brothel Amidst Teaching Commitments</td>
+      <td>Brothel</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>14-May-16</td>
+      <td>Travel Family Exploration</td>
+      <td>A Multinational Family Exploration Journey</td>
+      <td>Spain Georgia Tblisi Armenia</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td>14-May-16</td>
+      <td>Family Cooking Uncertainty Home Surprise Visit</td>
+      <td>Dreamer juggles cooking duties and unexpected family visits at family home</td>
+      <td>Dads house Mall Bangkapi mentioned indirectly</td>
+      <td>84</td>
+    </tr>
+    <tr>
+      <td>14-May-16</td>
+      <td>Hill Lafayette Orinda Bay Area Old woman Kindness Rewards Floating Meditation</td>
+      <td>Floating Meditation Sparked by Selfless Rewards in Scenic Bay Area Journey</td>
+      <td>Lafayette Orinda Bay Area</td>
+      <td>152</td>
+    </tr>
+    <tr>
+      <td>12-May-16</td>
+      <td>Sex Bus Community College Pregnancy</td>
+      <td>Sexual encounter with Vanessa on a Commuter Bus</td>
+      <td>Commuter Bus Community College</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td>24-Apr-16</td>
+      <td>Conflict Violence Protection Celebrities Unfamiliar Environment</td>
+      <td>Dreamer Tries to Save Former President Barack Obama from Potential Attack</td>
+      <td>Kenwal Honda dealership Dads room</td>
+      <td>172</td>
+    </tr>
+    <tr>
+      <td>23-Apr-16</td>
+      <td>Survival Conflict Strategy Friend Fear</td>
+      <td>Fearful Hunger Games Scenario Unfolds Friendship Averts Danger</td>
+      <td>House in Orinda</td>
+      <td>127</td>
+    </tr>
+    <tr>
+      <td>20-Apr-16</td>
+      <td>Travel Meeting People Repeat Encounters Military Romance</td>
+      <td>Regular JetSetter Meets Globetrotting Beauty Amid Military Witness</td>
+      <td>Unspecified places in the world Airplane Japan mentioned Brazil mentioned</td>
+      <td>105</td>
+    </tr>
+    <tr>
+      <td>20-Apr-16</td>
+      <td>Romance Awkwardness Embarrassment</td>
+      <td>Attempting to Impress Future InLaws Leads to Unforeseen Embarrassment</td>
+      <td>Ericas house in Wisconsin</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td>20-Apr-16</td>
+      <td>Entrepreneurship High School Road Trip Blackmail Roller Coaster First Kiss</td>
+      <td>Entrepreneural Thwart and Unexpected First Kiss Experience in Dream</td>
+      <td>Wisconsin Amusement Park</td>
+      <td>291</td>
+    </tr>
+    <tr>
+      <td>19-Apr-16</td>
+      <td>Family Conflict Apocalypse Fear Sickness Relief Health Issues</td>
+      <td>A Family Dispute Followed by an Apocalyptic Nightmare and a Puzzling Injury</td>
+      <td>Home Haircut Salon River High ground Temple</td>
+      <td>167</td>
+    </tr>
+    <tr>
+      <td>18-Apr-16</td>
+      <td>Dealership Car M5 Lease Financial Burden Thomas</td>
+      <td>Unexpected Financial Burden After Dreamer Gets Desired Car Lease</td>
+      <td>Dealership</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>12-Apr-16</td>
+      <td>Intimacy Conversation Relationship</td>
+      <td>Intimate Conversation With Nana About Her Love Life</td>
+      <td>Bedroom</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>05-Apr-16</td>
+      <td>School Friends Anxiety Adventure</td>
+      <td>Unconventional Stroll with Friends Reveals Anxiety Over English Class</td>
+      <td>MHS which is somehow Silverwood</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <td>05-Apr-16</td>
+      <td>Travel Ecig Store Struggle Children</td>
+      <td>Dreamer and Companion Struggle in Thai Smoke Shop</td>
+      <td>Thailand Smoke Shop</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>03-Apr-16</td>
+      <td>Friends House Teaching Language Old Man Speech Political Announcement Unexpected News Cancer Sympathy Handicrafts</td>
+      <td>Transition from Language Lessons to Sudden Political Announcement  Illness Revelation at Friends House</td>
+      <td>Kirks house</td>
+      <td>329</td>
+    </tr>
+    <tr>
+      <td>03-Apr-16</td>
+      <td>Travel Highway Financial Freedom Job Quit Adventure</td>
+      <td>Financial Freedom Leads to Leisurely Highway Journey in Bangkok</td>
+      <td>Highway 24 Orinda Bangkok</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>03-Apr-16</td>
+      <td>NonHuman Figure Brothel Motorcycle Lorry Family Philippines Custody Battle Electricity Dog War Ben Afflecklike figure Road Trip Gas Station Car Theft</td>
+      <td>Fantastical Encounters</td>
+      <td>American west town in Nevada Philippines Highway Petrol station</td>
+      <td>585</td>
+    </tr>
+    <tr>
+      <td>27-Mar-16</td>
+      <td>Nana Sponseror Dream Relationship Intimacy</td>
+      <td>Dreamers Intimate Encounter with Nana Leads to Awakening</td>
+      <td>Nanas Place</td>
+      <td>169</td>
+    </tr>
+    <tr>
+      <td>26-Mar-16</td>
+      <td>Field Trip Argument Language Misunderstanding High Speed Drive Traffic Crash Landing</td>
+      <td>HighSpeed Adventure and Misunderstandings on a Field Trip</td>
+      <td>Unspecified City</td>
+      <td>147</td>
+    </tr>
+    <tr>
+      <td>25-Mar-16</td>
+      <td>Friendship Visiting Forgetfulness</td>
+      <td>Friendly Gathering Between Dreamer and Dorian Forgotten</td>
+      <td>Dreamers place Dorians place</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>18-Mar-16</td>
+      <td>Conflict Guilt Rules Responsibility Violence</td>
+      <td>Forced Fight with Chotika Ends in Regret and Loss</td>
+      <td>Home</td>
+      <td>87</td>
+    </tr>
+    <tr>
+      <td>18-Mar-16</td>
+      <td>Dream Currency Social Gathering Food</td>
+      <td>Dreamers Modish Currency Amazes But Cant Afford Fries</td>
+      <td>Not Specific</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>18-Mar-16</td>
+      <td>Unfulfilled Expectations Desire for Connection Emotion Dimensions of Relationships</td>
+      <td>Unresolved Tensions in Chance Encounter with Chotika</td>
+      <td>Chotikas building stairs third floor</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>18-Mar-16</td>
+      <td>Family Expensive Dining Helicopter Excessive Eating Transformations Aspirations</td>
+      <td>A Surreal Dream of Extravagant Dining and Unusual Lifestyle</td>
+      <td>Not mentioned</td>
+      <td>157</td>
+    </tr>
+    <tr>
+      <td>16-Mar-16</td>
+      <td>Friendship School Anxiety Lost Items Travel Driving Dream Locations Nostalgia</td>
+      <td>A Journey through Languages Lost Items and Unusual Interactions</td>
+      <td>High School rustbelt town Moms condo building Shan State</td>
+      <td>495</td>
+    </tr>
+    <tr>
+      <td>13-Mar-16</td>
+      <td>Friendship Communication Humor</td>
+      <td>Dreamer Jokingly Tries to Persuade Friend About Chatchais Sexuality</td>
+      <td>Not Mentioned</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>12-Mar-16</td>
+      <td>Flying Adventure Frustration City Views Technology failure</td>
+      <td>Flying High Over Urban Landscape with Unrecorded Memories</td>
+      <td>Unidentified city</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td>09-Mar-16</td>
+      <td>Dream Friendship Chase Transformation Riding Home invasion Vandalism</td>
+      <td>Dream Journey with Emotional Expression Adventure Ride and Home Invasions</td>
+      <td>Markets Round Table 1103 Kenwal Dreamers House</td>
+      <td>340</td>
+    </tr>
+    <tr>
+      <td>08-Mar-16</td>
+      <td>School Police Language Confusion Car Theft Driving Crowd</td>
+      <td>Chaotic Classroom Visit Car Theft and Difficult Drive in Crowded Boardwalk</td>
+      <td>High School Car Crowded Boardwalk</td>
+      <td>269</td>
+    </tr>
+    <tr>
+      <td>07-Mar-16</td>
+      <td>Politics Uncle Travel</td>
+      <td>Uncle Khaeks Enthusiasm for Ted Cruzs Visit Spurs Controversy</td>
+      <td>Bangkok airport</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>07-Mar-16</td>
+      <td>Visitors Friends Dream House Mother Silence Sleep Preparation</td>
+      <td>Serene Visit to Dreamers Imaginary Home Amidst an Abandoned Strip Mall</td>
+      <td>Dreamerâs house Big parking lot Abandoned strip mall</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>07-Mar-16</td>
+      <td>Car Politics Imagery</td>
+      <td>Old Volvo and Highend BMW Convey Political Paradox</td>
+      <td>Parking Lot</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>04-Mar-16</td>
+      <td>Travel Road Trip Fear Water Culture</td>
+      <td>Thrilling Transcontinental Road Trip Unexpectedly Ends in Flooded Thai Village</td>
+      <td>Utah Thai village Chao Phraya River Hotel Suite</td>
+      <td>134</td>
+    </tr>
+    <tr>
+      <td>02-Mar-16</td>
+      <td>Conflict Renovation Friends Miscommunication Union Grandparents Missing classes Relationship University</td>
+      <td>A Chaotic Blend of Friendship Woes Home Improvement Romantic Endeavours and University Life</td>
+      <td>Walnut Creek type town university dorm</td>
+      <td>228</td>
+    </tr>
+    <tr>
+      <td>08-Feb-16</td>
+      <td>Desire Ice Tension Friends House</td>
+      <td>Unfulfilled Quest for Ice Sparks Tension at Friends House</td>
+      <td>Lawrences House</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>03-Feb-16</td>
+      <td>Cars SUV Truck Dog English speaking Caravan Garage</td>
+      <td>Grand Vehicles and a Linguistic Canine Stir Adventure in a Garage Voyage</td>
+      <td>Parking Lot Garage</td>
+      <td>102</td>
+    </tr>
+    <tr>
+      <td>03-Feb-16</td>
+      <td>Cats Hunger Grandma Grandpa Boxes Talking Cat Facebook Pets Dream interpretation</td>
+      <td>Curiosity Spares the Cat</td>
+      <td>Home</td>
+      <td>221</td>
+    </tr>
+    <tr>
+      <td>30-Jan-16</td>
+      <td>Terrorist Attack Accident Survival Dream Ally Dream Change Encounter Thai Police Station</td>
+      <td>Survivors Perilous Trek to Safety Amidst Missile Attack and Gunfire</td>
+      <td>Orinda Snowy Mountain Thai Police Station</td>
+      <td>110</td>
+    </tr>
+    <tr>
+      <td>26-Jan-16</td>
+      <td>Condo Fish Dream Out of Proportion U Delight Condo East View New Building</td>
+      <td>Dream Displays Gigantic Fish Being Caught from New Building by People</td>
+      <td>U Delight Condo New Condo Building</td>
+      <td>76</td>
+    </tr>
+    <tr>
+      <td>22-Jan-16</td>
+      <td>Travel Friends School Family Clothing</td>
+      <td>Journey Back to Thailand Showcases Old Friendships and Borrowed Shorts</td>
+      <td>San Francisco Bart Station Bangkok Thailand Secondary School</td>
+      <td>152</td>
+    </tr>
+    <tr>
+      <td>21-Jan-16</td>
+      <td>Party Teenagers Misbehavior Conflict Family Gifts Fear Drugs</td>
+      <td>Party at Moms House Turns into Chaotic Evening Full of Conflict Irresponsibility and Fear</td>
+      <td>Moms House</td>
+      <td>144</td>
+    </tr>
+    <tr>
+      <td>18-Jan-16</td>
+      <td>Pets Monkeys Health Fear Family</td>
+      <td>Elderly Talking Monkey Gets Unexpected Injection While Dreamer Battles Fear of Treatment</td>
+      <td>Home</td>
+      <td>189</td>
+    </tr>
+    <tr>
+      <td>18-Jan-16</td>
+      <td>Education Teaching Shopping Clothing Diversity Work Training</td>
+      <td>Dreamer Negotiates Teaching Role and Clothing Crisis Amidst New Worker Training</td>
+      <td>College Shopping Mall</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td>18-Jan-16</td>
+      <td>Late for class Teaching Conversation Peers Insults Career Movement</td>
+      <td>Overcoming Tardiness and Keeping Students Engaged Former Peers Bring Surprising News and Transformation</td>
+      <td>School Lobby College BTAD Couchsurfingcom</td>
+      <td>369</td>
+    </tr>
+    <tr>
+      <td>10-Jan-16</td>
+      <td>Sleep Paralysis Isolation Desire for Connection Fear</td>
+      <td>Paralyzed and Alone</td>
+      <td>BKK Bangkok Condo</td>
+      <td>111</td>
+    </tr>
+    <tr>
+      <td>10-Jan-16</td>
+      <td>City Transformation Highway Couchsurfer House</td>
+      <td>Quiet Orinda Transforms Into Metropolis in Dream Interaction With Couchsurfer Avoided</td>
+      <td>Orinda House Orinda</td>
+      <td>87</td>
+    </tr>
+    <tr>
+      <td>06-Jan-16</td>
+      <td>Home Bed Intimacy Emotional Interaction</td>
+      <td>Expressions of Tactile Intimacy Catch Realitys Edge in a Dream</td>
+      <td>Dads House</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td>23-Dec-15</td>
+      <td>Old Coins eBay Motorcycle MHS Schedule Football Team Motorcycle Racing Team</td>
+      <td>Valuable Coins Discovered and Misunderstood Identity at School</td>
+      <td>Millies MHS</td>
+      <td>131</td>
+    </tr>
+    <tr>
+      <td>14-Dec-15</td>
+      <td>War Gangs Conflict Anxiety Unintentional Harm Fear Dreams</td>
+      <td>Blue Gang Member Mistakenly Shoots Ally in Heated Gunfight</td>
+      <td>Big apartment block staircase</td>
+      <td>231</td>
+    </tr>
+    <tr>
+      <td>13-Dec-15</td>
+      <td>Presidency White House 1980s Barack Obama Ronald Reagan Technology</td>
+      <td>A Visit to the White House</td>
+      <td>White House</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <td>13-Dec-15</td>
+      <td>Chimpanzee Transformation Mystery Identity</td>
+      <td>Mysterious Chimpanzee Transforms into a Woman from Okinawa</td>
+      <td>Okinawa Street</td>
+      <td>73</td>
+    </tr>
+    <tr>
+      <td>12-Dec-15</td>
+      <td>Apocalypse Danger Escape Train Shooting Girlfriend Protection</td>
+      <td>Apocalyptic Train Escape Amidst Chaotic Shootings</td>
+      <td>Train</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <td>09-Dec-15</td>
+      <td>Work Movie Theater Colleague Sleep Confusion Attraction</td>
+      <td>Stuck in a Dream within a Dream in a Movie Theater WorkSleep Arrangement</td>
+      <td>Movie Theater the dreamers bedroom The Cube 971</td>
+      <td>254</td>
+    </tr>
+    <tr>
+      <td>02-Dec-15</td>
+      <td>Family Miscommunication Accusation Drugs Health Concern</td>
+      <td>Grandpa Sams Misdirected Email Sparks Family Concern Over Health and Possible Drug Issues</td>
+      <td>None Mentioned</td>
+      <td>93</td>
+    </tr>
+    <tr>
+      <td>02-Dec-15</td>
+      <td>School Creepy Encounter Child Protection Thailand Danger</td>
+      <td>Adult Dreamer Confronts Inappropriate Teacher on Thailand School Visit</td>
+      <td>ElementaryMiddle School Thailand Womens Bathroom</td>
+      <td>315</td>
+    </tr>
+    <tr>
+      <td>01-Dec-15</td>
+      <td>Sexual Dream Casual Relationships Imagination</td>
+      <td>Dreamer Fantasizes About Multiple Partners in Dreamland House</td>
+      <td>Dreamland house</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>30-Nov-15</td>
+      <td>Work Theft Frustration Japan Teaching</td>
+      <td>Japanese Teaching Gig Turns Into Car Theft Frustration</td>
+      <td>Japan Nakijin Parking lot</td>
+      <td>156</td>
+    </tr>
+    <tr>
+      <td>22-Nov-15</td>
+      <td>Hotel Sleep Distress Physical discomfort Assistance</td>
+      <td>Distorted Face Woes in Hotel Dream</td>
+      <td>Hotel Bathroom Apartment</td>
+      <td>128</td>
+    </tr>
+    <tr>
+      <td>22-Nov-15</td>
+      <td>Work Frustration Unusual Expectations Discontent</td>
+      <td>Work Tensions and Unexpected Visitor at Honda</td>
+      <td>Honda Korea</td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>22-Nov-15</td>
+      <td>Hiking Family Camping Horse and Buggy Traffic Conflict</td>
+      <td>Dreamer Recalls Memorable Hiking Trip Turned Sour due to a Car Collision</td>
+      <td>Hiking trail Camping spot City Traffic</td>
+      <td>192</td>
+    </tr>
+    <tr>
+      <td>13-Nov-15</td>
+      <td>High School Graduation Party Mansion Relaxation Miscommunication Cancelation</td>
+      <td>Unexpected Party Cancelation During High School Graduation Celebrations</td>
+      <td>Mansionlike house High School Hot Tub</td>
+      <td>183</td>
+    </tr>
+    <tr>
+      <td>13-Nov-15</td>
+      <td>Adventure Friends Locations Guilt Intimacy</td>
+      <td>Adventurous Bike Ride in Bangkok Leads to Unexpected Events and Guilt</td>
+      <td>Bangkok</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <td>13-Nov-15</td>
+      <td>Work Car School Anxiety Escape Guns Toy Candy Running Chase</td>
+      <td>Frenzied EscapeAndChase Dream Includes Unstable Coworker Guns and Candy Mishaps</td>
+      <td>Silverwood a school a hill</td>
+      <td>326</td>
+    </tr>
+    <tr>
+      <td>11-Nov-15</td>
+      <td>Drinking Meeting Dream within a Dream Confusion College Government Building</td>
+      <td>College Meeting Ends in a Drunken Dream Twist</td>
+      <td>àààà¹ààà Government Building Dreamers Home</td>
+      <td>145</td>
+    </tr>
+    <tr>
+      <td>09-Nov-15</td>
+      <td>Driving Car Toll way Payment Debt</td>
+      <td>Paying Unsettled Dues during a Car Ride with Chotika</td>
+      <td>Toll way</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>07-Nov-15</td>
+      <td>Beach Waves Family Sleep Abandonment</td>
+      <td>Swept Up in the Tide</td>
+      <td>Beach House</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>07-Nov-15</td>
+      <td>Family Pets Anxiety Memory confusion</td>
+      <td>Dreamer Experiences Confusion and Worry Over Misplaced Pet</td>
+      <td>Home</td>
+      <td>63</td>
+    </tr>
+    <tr>
+      <td>03-Nov-15</td>
+      <td>Party Bingo Miscommunication Anxiety</td>
+      <td>Tension at Bingo Game Managed by Dreamer at Party with Giorgio</td>
+      <td>Georgia</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td>25-Oct-15</td>
+      <td>Technology Driving Conflict Language Dream Awareness</td>
+      <td>Untrustworthy Stranger and Language Shift Confirm Dream State</td>
+      <td>Not specified</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <td>20-Oct-15</td>
+      <td>Comedy Seinfeld Jennifer Tun Dream Interaction</td>
+      <td>Dream Interaction with Jennifer Tun in Seinfeld Comedy Movie</td>
+      <td>Not Mentioned</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>15-Oct-15</td>
+      <td>Sexual Casual Relationships Recollection Multiple Partners</td>
+      <td>A Pattern of Casual Nonchalant Sexual Encounters</td>
+      <td>Various houses</td>
+      <td>110</td>
+    </tr>
+    <tr>
+      <td>13-Oct-15</td>
+      <td>Romance Intimacy Anxiety Party Interrupted</td>
+      <td>Romantic Interludes and Unexpected Interruptions at Party</td>
+      <td>Party at Some Guys House Restaurant</td>
+      <td>158</td>
+    </tr>
+    <tr>
+      <td>04-Oct-15</td>
+      <td>Friends Car Ride Conversation House Nostalgia</td>
+      <td>A School Pickup Leading to Nostalgic Conversations at Old Home</td>
+      <td>Car School Chotikas old house Bathroom Condo</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <td>02-Oct-15</td>
+      <td>Football Strangers Game Goal Friends Kirsty Conversation</td>
+      <td>Dreamer Wins Football Game and Talks about Life with Friends</td>
+      <td>Football Field</td>
+      <td>172</td>
+    </tr>
+    <tr>
+      <td>01-Oct-15</td>
+      <td>Nursing Home Library Elevator Magazines The Economist Pamphlets Timberland Mother</td>
+      <td>Comfortable Elevator Ride and Unexpected Runin with Mother in Nursing Home Library</td>
+      <td>Millies Nursing Home Library Elevator</td>
+      <td>215</td>
+    </tr>
+    <tr>
+      <td>30-Sep-15</td>
+      <td>Airplane Luxury Feeling Cheated Danger City Travel</td>
+      <td>Upscale Air Travel Followed by Frivolous Dangerous City Flight Adventure</td>
+      <td>Airplane Unknown city</td>
+      <td>159</td>
+    </tr>
+    <tr>
+      <td>30-Sep-15</td>
+      <td>Adventure Fear Discovery Mystery Cultural Mixture</td>
+      <td>Unplanned Expedition into an Ancient Pyramid Full of Mysteries Migrant Workers and a Surprising Camp Counselor</td>
+      <td>OIS sports fields Old Pyramid Mysterious Room in Pyramid Nakijin Junior High School</td>
+      <td>394</td>
+    </tr>
+    <tr>
+      <td>20-Sep-15</td>
+      <td>Adventure Friendship Fear Chaos Violence Guilt</td>
+      <td>From Exciting Outdoor Adventure to Harrowing Violence</td>
+      <td>Caminolike albergue Car 800 miles away from California Louisiana Dock Boat Alley Room</td>
+      <td>587</td>
+    </tr>
+    <tr>
+      <td>18-Sep-15</td>
+      <td>New Home Students Age Inappropriate Advance Relationships Meetings Cancellations</td>
+      <td>Adjusting to a New Home with Visits and Unwelcome Advances</td>
+      <td>New condo Bangkapi</td>
+      <td>127</td>
+    </tr>
+    <tr>
+      <td>16-Sep-15</td>
+      <td>Family Sexuality Celebrity School Adventure Group Dynamics Fear Sanitary Concern</td>
+      <td>Virtual Sexual Exploration Celebrity Encounter and Dreaded Toilet Slide in Animated Dream</td>
+      <td>Home Old Pool Field Trip Location Toilet Slide</td>
+      <td>252</td>
+    </tr>
+    <tr>
+      <td>09-Sep-15</td>
+      <td>Real Estate Friendship Traffic Carnival Mischievous Behavior Fantasy Sex</td>
+      <td>A Real Estate Exploration Turns into a Flight Over Fantasy Carnival</td>
+      <td>Thong Lo</td>
+      <td>169</td>
+    </tr>
+    <tr>
+      <td>08-Sep-15</td>
+      <td>TV Show Comedy Adventure Camping Ecommerce Food</td>
+      <td>A Surreal Adventure with Trailer Park Boys</td>
+      <td>Moraga Taco Bell</td>
+      <td>197</td>
+    </tr>
+    <tr>
+      <td>03-Sep-15</td>
+      <td>The Beatles Movies Dream Mom Lamborghini Parking Popcorn Credit Card Jurassic Park Ringo Starr</td>
+      <td>Dreamers Movie Date with The Beatles Ends in a MoodKiller</td>
+      <td>Movie Theater</td>
+      <td>156</td>
+    </tr>
+    <tr>
+      <td>21-Aug-15</td>
+      <td>Work Relationships Travel Surprise Confusion</td>
+      <td>HearttoHeart with Ex Unfulfilled Sailing Dreams and Unexpected Thai Conversation</td>
+      <td>Moraga Orinda San Francisco</td>
+      <td>404</td>
+    </tr>
+    <tr>
+      <td>14-Aug-15</td>
+      <td>Family Alcohol Concern Grandpa Party House</td>
+      <td>Confronting Grandpas Unexpected Alcoholism at a Family Gathering</td>
+      <td>Grandpas house</td>
+      <td>259</td>
+    </tr>
+    <tr>
+      <td>10-Aug-15</td>
+      <td>Father Car Dodge Intrepid Damage Unknown Destination</td>
+      <td>Enigmatic Journey with Father in Vintage Cars</td>
+      <td>Not Mentioned</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>10-Aug-15</td>
+      <td>New Location Visitor Intimacy Fear Overwhelming Peer Pressure</td>
+      <td>Unexpected Visitors and Unwanted Gifts increase Pressure in New Abode</td>
+      <td>New place Kitchen</td>
+      <td>167</td>
+    </tr>
+    <tr>
+      <td>10-Aug-15</td>
+      <td>Anxiety Family Home Adventure Unknown Transportation</td>
+      <td>Restless Night of Eerie Sounds Home Exploration and a Transforming Bedroom</td>
+      <td>Dreamers Bedroom Kitchen New Found Room Master Bedroom Freeway WaterEncompassed Flat Road</td>
+      <td>214</td>
+    </tr>
+    <tr>
+      <td>05-Aug-15</td>
+      <td>Dream Fear Escape Strength Moving Deadline Packing Storage Bridge Height</td>
+      <td>Thrilling Dream of Precarious Height Impending Deadline and Packing Concerns</td>
+      <td>Camp Davis Bridge</td>
+      <td>158</td>
+    </tr>
+    <tr>
+      <td>05-Aug-15</td>
+      <td>Dream Barack Obama Noam Chomsky Michelle Obama Lecture Famous People Conversation Interview Injury Children</td>
+      <td>Dreamers Unexpected Encounter with Obama Family</td>
+      <td>Davis or a familiar place</td>
+      <td>214</td>
+    </tr>
+    <tr>
+      <td>03-Aug-15</td>
+      <td>Conflict Weaponry Deception Victory</td>
+      <td>Fearless Faceoff</td>
+      <td>Inside two trucks</td>
+      <td>183</td>
+    </tr>
+    <tr>
+      <td>03-Aug-15</td>
+      <td>Family Vehicles Home</td>
+      <td>Family Gathering with Cars at Kenwal House</td>
+      <td>Kenwal house</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>02-Aug-15</td>
+      <td>Soccer School Homework</td>
+      <td>Reliving High School Soccer Game Ebbs with Tension and Nostalgia</td>
+      <td>Home MiddleHigh School</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>02-Aug-15</td>
+      <td>Transportation Group Effort Failure</td>
+      <td>Attempted Teamwork to Jumpstart Massive Lorry Ends in Failure</td>
+      <td>Aircraft Carrier</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td>01-Aug-15</td>
+      <td>Education Friendship Romance Sexual Orientation Betrayal Gambling Beach</td>
+      <td>High School Follies with Mysterious Gender Reveals Scams in Casino and Beach Hangout</td>
+      <td>New High School Corporate Office CasinoArcade Thailand Beach</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>31-Jul-15</td>
+      <td>Travel Family Surprise Work Decisions</td>
+      <td>Unexpected Family Reunion and Sudden Work Decisions in California Dream</td>
+      <td>California Bangkok Theater Airport</td>
+      <td>232</td>
+    </tr>
+    <tr>
+      <td>28-Jul-15</td>
+      <td>Supernatural Abilities Sexuality Emotion Lucid Dreaming</td>
+      <td>TimeStopping Erotic Adventures Turns Emotional with Potential Pregnancy Scare</td>
+      <td>Beach Movie Set</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <td>27-Jul-15</td>
+      <td>School Mentorship Attraction Aircraft Academic Help Misunderstanding Travel Family</td>
+      <td>High School Mentorship Sparks Attraction Amidst Homework Help and Misdirected Travel</td>
+      <td>MHS High School SFO San Francisco International Airport SD San Diego</td>
+      <td>242</td>
+    </tr>
+    <tr>
+      <td>26-Jul-15</td>
+      <td>Adventure School Friendship Rebellion Animals Caretaking</td>
+      <td>Revisiting Old School and Subsequent Transformation into Cat Adoption Hub</td>
+      <td>School Fredriks Living Room</td>
+      <td>191</td>
+    </tr>
+    <tr>
+      <td>26-Jul-15</td>
+      <td>Amusement Park Subway San Francisco Art Deco Driving Japanese Izakaya Argument</td>
+      <td>MotherDaughter Adventure at SF Themed Amusement Park Ends with an Argument at an Izakaya</td>
+      <td>Amusement Park San Francisco Replica Subway Izakaya</td>
+      <td>149</td>
+    </tr>
+    <tr>
+      <td>26-Jul-15</td>
+      <td>Dream Analysis Driving Autopilot Tickets Thailand</td>
+      <td>Unsettled SelfDriving Journey in California Leads to Risk of Penalty</td>
+      <td>California Concord Walnut Creek WC Thailand</td>
+      <td>167</td>
+    </tr>
+    <tr>
+      <td>25-Jul-15</td>
+      <td>Friendship Misunderstanding Fear Honesty</td>
+      <td>Misunderstanding and Fear Resolved by Honesty at Friends House</td>
+      <td>OrindaMoraga Arias house</td>
+      <td>191</td>
+    </tr>
+    <tr>
+      <td>24-Jul-15</td>
+      <td>Food Anger Miscommunication Friend Interaction Transportation</td>
+      <td>Unwanted McDonalds Order Causes Frustration in Moraga Visit</td>
+      <td>MoragaOrinda</td>
+      <td>116</td>
+    </tr>
+    <tr>
+      <td>23-Jul-15</td>
+      <td>Living Situation Friends Teachers Dining Exploration Call</td>
+      <td>Unusual Apartment Living and Nighttime Excursions End with Unexpected Phone Call</td>
+      <td>Apartment Japan Carls Junior stand Hidden hotel Bangkok</td>
+      <td>272</td>
+    </tr>
+    <tr>
+      <td>23-Jul-15</td>
+      <td>Storytelling Social Gathering Objectification Embarrassment</td>
+      <td>An Unexpected Display in a Social Gathering</td>
+      <td>Unspecified location around a table</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td>22-Jul-15</td>
+      <td>Dream Moving Davis Unknown People Gokarting</td>
+      <td>Unexpected Roadtrip and GoKarting Plan in Dream Encounter</td>
+      <td>Davis GoKarting place</td>
+      <td>170</td>
+    </tr>
+    <tr>
+      <td>22-Jul-15</td>
+      <td>Train Old House New House Family Travel Responsibility</td>
+      <td>Ancient Train Tracks Family Reunion and Impending Return to Thailand</td>
+      <td>Kenwal house Dads New House Thailand Bakersfield</td>
+      <td>119</td>
+    </tr>
+    <tr>
+      <td>22-Jul-15</td>
+      <td>Cars Driving Decisionmaking</td>
+      <td>Nostalgic Drive Leads to Potential Car Sale Decision</td>
+      <td>No specific locations mentioned</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>22-Jul-15</td>
+      <td>Lake Floating Imagination Pirates Fighting Rapid Tide Harbor Fishing Trips</td>
+      <td>Imaginative Lake Floating Adventure Ending at a Bustling Harbor</td>
+      <td>Lake Harbor</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <td>21-Jul-15</td>
+      <td>Dream Pool Palace Taxi Work Casino Kids Games Fight Parking Garage Shooting Motorcycle Crash Temple Visit Family Penthouse Conversation Valueincrease Scheme</td>
+      <td>Sequence of Vivid and Unrelated Events Unfolding in a Dream Journey</td>
+      <td>Jordan Pool BKK Bangkok CA California Varsity theater Parking Garage Georgia Temple Condo Penthouse Subway Station High School MHS high school Phuket Japanese style Hotel</td>
+      <td>1274</td>
+    </tr>
+    <tr>
+      <td>14-Jul-15</td>
+      <td>Return Confusion Acquaintances Cannabis Gift</td>
+      <td>Back in America Lost and Encountering Familiar Faces</td>
+      <td>America Community College Restaurant Fred Ahlberghs house</td>
+      <td>246</td>
+    </tr>
+    <tr>
+      <td>09-Jul-15</td>
+      <td>University Collapse Police High School Reunion Helping Party Lost Phone</td>
+      <td>From Collapsing University Building to High School Reunion and Misplaced Phone</td>
+      <td>Thai University High School Reunion Fearons House Yard</td>
+      <td>308</td>
+    </tr>
+    <tr>
+      <td>05-Jul-15</td>
+      <td>Error</td>
+      <td>Error</td>
+      <td>Error</td>
+      <td>Error</td>
+    </tr>
+    <tr>
+      <td>04-Jul-15</td>
+      <td>Mother Pickup Truck Thailand USA Registration Vehicle Parts</td>
+      <td>Mums Pickup Truck Purchase from Thailand Left Incomplete in USA due to Forgotten Parts</td>
+      <td>Thailand USA</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>03-Jul-15</td>
+      <td>High School Toilet Class Smell Jake Gellar Teacher Biology Powerpoint Church Group UCD DVC Restaurant Thailand</td>
+      <td>High School Bathroom Escapade Morphs into Thai Restaurant Adventure</td>
+      <td>High School UCD DVC Thailand Thai or Japanese restaurant</td>
+      <td>291</td>
+    </tr>
+    <tr>
+      <td>02-Jul-15</td>
+      <td>Guns Learning Target Practice Fire Sexual Intimacy Recognizable Characters</td>
+      <td>Guided Shooting Lessons Lead to Fiery Targets and Unexpected Encounters</td>
+      <td>Not specified</td>
+      <td>204</td>
+    </tr>
+    <tr>
+      <td>02-Jul-15</td>
+      <td>Ben Afflek Documentary Interview Reality TV Running Mirror Portal</td>
+      <td>Hosting Chaos</td>
+      <td>Film set Mirrorportal Things Resting Spot</td>
+      <td>118</td>
+    </tr>
+    <tr>
+      <td>30-Jun-15</td>
+      <td>Friendship Anxiety Protection Distrust</td>
+      <td>Dreamer Torn Between Protecting Friend and Leaving Uncomfortable Situation</td>
+      <td>Dorm Style Apartment</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>23-Jun-15</td>
+      <td>Driving Sierras Storm Falling Love Socks</td>
+      <td>Dreamers Spiralling Drive into Love Proclamation and Symbolic Sock Removal in Sierra Storm</td>
+      <td>Sierras</td>
+      <td>90</td>
+    </tr>
+    <tr>
+      <td>21-Jun-15</td>
+      <td>Accident Mountain Biking Safety Gear</td>
+      <td>HighSpeed Mountain Biking Fall Mitigated by Safety Gear</td>
+      <td>Street</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>19-Jun-15</td>
+      <td>Dream Analysis Emotional Relationships Memories Confusion Lost  Found Drugs</td>
+      <td>Emotional Roller Coaster Dream</td>
+      <td>Apartment in a Building A or B Starbucks Orinda hill private school in Myanmar condo in Bang Kapi</td>
+      <td>954</td>
+    </tr>
+    <tr>
+      <td>18-Jun-15</td>
+      <td>Suspense Police intervention Fear Surprise Intimacy Realization Job Search Encounter</td>
+      <td>Dramatic Police Search Leads to Unexpected Encounter and Revelation in Argentina</td>
+      <td>Williams house Argentina 5th floor of an old building Lobby of the building Dreamers room</td>
+      <td>358</td>
+    </tr>
+    <tr>
+      <td>17-Jun-15</td>
+      <td>Restaurant Unprofessionalism Gun Cat Attempted Dine and Dash Suspicion Decision Girls Lost Item</td>
+      <td>Disturbing Dining Experience Leads to Argument with Manager and a Mysterious Ending Involving Firearms</td>
+      <td>Kenwal house Restaurant across the street Kitchen Parking lot</td>
+      <td>320</td>
+    </tr>
+    <tr>
+      <td>15-Jun-15</td>
+      <td>Dream Friends Homes Secret Meeting Michelle Obama Sexual Activity Intrusion Awareness</td>
+      <td>Mother and Larrys Double Homes</td>
+      <td>Ohio mentioned Davis mentioned the new houses</td>
+      <td>276</td>
+    </tr>
+    <tr>
+      <td>11-Jun-15</td>
+      <td>Work Job Change Writing Illustration Mistake</td>
+      <td>Job Transition Leads to Unfamiliar Relations and Increased Tensions</td>
+      <td>CAP Building</td>
+      <td>164</td>
+    </tr>
+    <tr>
+      <td>09-Jun-15</td>
+      <td>Travel Real Estate Resort City Exploration</td>
+      <td>Exploring Real Estate Investment Opportunities in Citylike Resort</td>
+      <td>Street in Bangkok BCN Diagonal</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>06-Jun-15</td>
+      <td>Work Car Dealership Transition Classic Cars Exotic Cars</td>
+      <td>From Regular Dealership to Classic and Exotic Car Haven</td>
+      <td>Dealership possibly a Honda dealership before the transition</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>05-Jun-15</td>
+      <td>Breakfast House Sleep School Confusion</td>
+      <td>A Peculiar Morning Routine at Dads House</td>
+      <td>Concord</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <td>05-Jun-15</td>
+      <td>Dream Analysis Travel Gambling Social Interactions Conflict Relationships</td>
+      <td>An Adventurous Dream in Bangkok</td>
+      <td>Bangkok BKK Mall Bar Stairs Escalator Chatchais House My Room</td>
+      <td>446</td>
+    </tr>
+    <tr>
+      <td>31-May-15</td>
+      <td>Family Friends Mini golfing Dream Mistakes Trust Dependence</td>
+      <td>Dreamerâs Detour From MiniGolfing leads to an Unexpected Adventure and SelfRealization</td>
+      <td>Moraga Lafayette Concord</td>
+      <td>200</td>
+    </tr>
+    <tr>
+      <td>29-May-15</td>
+      <td>Family Travel Fear Transportation Movie Visa Anxiety Thailand Spain Netherlands</td>
+      <td>AnxietyProvoking Trip Through SpainThailand Blend With Bizarre Movie Experience and Lost Backpack</td>
+      <td>Spain Thailand Netherlands Bangkok Cinema Art Tunnel</td>
+      <td>341</td>
+    </tr>
+    <tr>
+      <td>27-May-15</td>
+      <td>Wedding Party Mansion Ecigarette Drinks Amnesia Accusations Investigation Restaurant</td>
+      <td>Mystifying Mansion Wedding Taken Over by Suspected Drugging Incident</td>
+      <td>Dreamers house mansion restaurant in Lafayette</td>
+      <td>239</td>
+    </tr>
+    <tr>
+      <td>16-May-15</td>
+      <td>Reunion Interruptions Happiness Sexual Intimacy</td>
+      <td>Peaceful Reunion with Mylien Met with Unavoidable Interruptions</td>
+      <td>Not Specified</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>16-May-15</td>
+      <td>Travel Group Organization Misunderstandings Family Communication</td>
+      <td>Unexpected Adventures on a Group Train Trip</td>
+      <td>Train DC indirect relation</td>
+      <td>159</td>
+    </tr>
+    <tr>
+      <td>15-May-15</td>
+      <td>Conflict Weapons Death Famous People Party Dream Worlds Exploration Confusion</td>
+      <td>Tensions Escalate in Shared Residence Unexpected Celebrity Meetings and Global Toy Mystery</td>
+      <td>Shared apartment Baseball Game Dreamers House</td>
+      <td>544</td>
+    </tr>
+    <tr>
+      <td>14-May-15</td>
+      <td>Dream Orientation Party Languages Lost Phone</td>
+      <td>Unexpected Party and Lost Phone in Mystery Location Orientation</td>
+      <td>Turkey or Myanmar not conclusive Securitys office of lost items</td>
+      <td>214</td>
+    </tr>
+    <tr>
+      <td>14-May-15</td>
+      <td>Cayla Kitayama Admiration Car Crash High Highway Simulation Falling Vinnie</td>
+      <td>Admiration for Cayla Kitayama and Terrifying High Highway Car Crash Simulation</td>
+      <td>High Highway</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <td>11-May-15</td>
+      <td>Dream Unpreparedness Reunion Former Contact Recreation Sports</td>
+      <td>Dreamer Meets Former Contact for Meal Attends Second Reunion at RunDown Recreation Club</td>
+      <td>Outside Business meeting Restaurant Mountain ASBarcelona Volleyball pool recreation club of a school</td>
+      <td>222</td>
+    </tr>
+    <tr>
+      <td>10-May-15</td>
+      <td>Moving Filming Star Wars High Jump  No Seatbelts</td>
+      <td>Unanticipated Star Wars Filming Experience at Local Intersection</td>
+      <td>Barbara Road intersection with Oak</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>10-May-15</td>
+      <td>Friends Food Singing Argument Ignorance Social Interaction</td>
+      <td>Casual Gathering Takes Unexpected Turn After Singing Interruption</td>
+      <td>Not Specified</td>
+      <td>153</td>
+    </tr>
+    <tr>
+      <td>09-May-15</td>
+      <td>Boat Mother Fear of Heights Flood Crane Falling Water</td>
+      <td>MotherDaughter Sea Adventure Turns into SkyHigh Ordeal</td>
+      <td>Boat Crane Pier</td>
+      <td>137</td>
+    </tr>
+    <tr>
+      <td>08-May-15</td>
+      <td>Dream Social Situation Guilt Embarrassment</td>
+      <td>Dreamer Embarrassed by Actions at Friends Gathering</td>
+      <td>Unidentified large house South Africa mentioned</td>
+      <td>130</td>
+    </tr>
+    <tr>
+      <td>07-May-15</td>
+      <td>Aria Repetition Emotion</td>
+      <td>Persistent Dreams Involving Aria</td>
+      <td>Not Mentioned</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>06-May-15</td>
+      <td>School Retreat Sexual Activity Friendship Honesty Communication Conflict</td>
+      <td>Love Triangle at a School Retreat Causes Conflict</td>
+      <td>School Retreat Hiking trail</td>
+      <td>164</td>
+    </tr>
+    <tr>
+      <td>05-May-15</td>
+      <td>Guilt Anxiety Secret Past High school Friends</td>
+      <td>Dreamer Plagued by Guilt and Fear Over Possible Dark High School Secret</td>
+      <td>High School back entrance</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>05-May-15</td>
+      <td>Guns Bullets Trust Party Privacy Secret Confrontation Tension Confession</td>
+      <td>Tension rises at dreamers party as privacy is violated Dreamer confesses having a secret cocktail</td>
+      <td>Dreamers Room Small Room</td>
+      <td>257</td>
+    </tr>
+    <tr>
+      <td>03-May-15</td>
+      <td>Travel Party Flight Adventure</td>
+      <td>HighCost Private Plane Trip and Party with Acquaintance</td>
+      <td>CM the private plane the party</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td>29-Apr-15</td>
+      <td>Assassination Team Mission Strangers Team Dynamics Train Travel</td>
+      <td>Messy Assassination Team Loses Members During Enigmatic Mission</td>
+      <td>Nonspecific Train</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>28-Apr-15</td>
+      <td>War Conflict Gun Violence Government Military Adventure</td>
+      <td>Unprepared Soldier Out of Ammunition in Interactive Iraqi Conflict</td>
+      <td>Iraq</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>28-Apr-15</td>
+      <td>Grandmothers Condo Futuristic Scary Building Scary People Train Pool Roller Coaster Chair Table Lost Items Father Emotional Conflict</td>
+      <td>Futuristic Grandmothers Condo Introduces Emotional Intrigue</td>
+      <td>Grandmothers Condo City Referenced but Not Explicitly Mentioned</td>
+      <td>167</td>
+    </tr>
+    <tr>
+      <td>21-Apr-15</td>
+      <td>Sports Organization Leading Soccer Unstructured</td>
+      <td>Leading Organization in Chaos</td>
+      <td>OIS</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>21-Apr-15</td>
+      <td>Party Wedding TV Movie Drinking Family Classmates Lawrence Grandpa Guestbook Car Ride Uncomfortable situation</td>
+      <td>Wedding Party Leads to Surprising and Uncomfortable Adventures for Dreamer</td>
+      <td>Dreamers house Barbara Road Larry and Moms new house</td>
+      <td>322</td>
+    </tr>
+    <tr>
+      <td>20-Apr-15</td>
+      <td>School Anxiety Age Misplacement</td>
+      <td>Older Student Returns to School Surrounded by Younger Peers</td>
+      <td>School</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>13-Apr-15</td>
+      <td>Work Danger Insecurity Complaint Fear</td>
+      <td>Battle for Safety in a Troubled School and Discontented Personal Life</td>
+      <td>Soapy store opposing store school classroom</td>
+      <td>149</td>
+    </tr>
+    <tr>
+      <td>12-Apr-15</td>
+      <td>Moving Japan Friendship Living together Relationship Adventure</td>
+      <td>Dreamers Adventurous Move to Japan Unfolds into an Unexpected Friendship Turning into a Romance</td>
+      <td>Japan Kobe Downtown</td>
+      <td>239</td>
+    </tr>
+    <tr>
+      <td>11-Apr-15</td>
+      <td>Friend Illness Intimacy Medical Attention</td>
+      <td>Dreamer Provides Care for Ill Friend After Revealing Encounter</td>
+      <td>Dreamers House</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>08-Apr-15</td>
+      <td>Cats Friends Overwhelm Animals Unexpected Change</td>
+      <td>Unplanned Cat Overpopulation Distracts Dreamer From Visiting Friends A Unique Colored Cat in the Pack</td>
+      <td>Not Specified</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <td>29-Mar-15</td>
+      <td>Roller coaster Adventure Excitement Fear</td>
+      <td>Thrilling Roller Coaster Ride Vividly Experienced in Dream</td>
+      <td>Roller Coaster</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>19-Mar-15</td>
+      <td>Dream Nightmare Fear Escape Threat Betrayal Book Conflict</td>
+      <td>A Terrifying Chase in a Villains Empire Leads to an Eventual Rebellion</td>
+      <td>Rich Villains Shady Empire Underground</td>
+      <td>264</td>
+    </tr>
+    <tr>
+      <td>10-Mar-15</td>
+      <td>Water Sea Creatures Brothel Mamasan Roller Blade Shooting Mission School Armed Cadets</td>
+      <td>A Series of Unusual and ActionPacked Dream Scenarios</td>
+      <td>Water Land Moms House Lafayette Brothel Freeway Hill School Parking Lot</td>
+      <td>193</td>
+    </tr>
+    <tr>
+      <td>05-Mar-15</td>
+      <td>Earthquake Fear Danger High School Smoking Surrealism</td>
+      <td>Earthquake Spectacle</td>
+      <td>Tall Building Outside Area</td>
+      <td>104</td>
+    </tr>
+    <tr>
+      <td>20-Feb-15</td>
+      <td>Searching Celebrities Conversation Art car Awkward moment</td>
+      <td>Dreamer Finds Celebrity Brook Bundy and Engages in an Awkward Conversation About Her Art Car</td>
+      <td>Miramonte</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>11-Feb-15</td>
+      <td>Affection Intimacy Relationship</td>
+      <td>Dreamer Engages in a Passionate Moment with Chommy</td>
+      <td>Not specified</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>09-Feb-15</td>
+      <td>Road trip Motorbikes Conflict Flirting Travel Miscommunication Cultural confusion</td>
+      <td>CrossCountry Road Trip Leads to Cultural Confusion</td>
+      <td>America New Mexico Thailand mentioned Taiwan mentioned Jordan mentioned Saudi Arabia mentioned Soi Cowboy or something mentioned</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>27-Jan-15</td>
+      <td>Drones Flight Adventure Remote Control Outdoors Valleys Mountains Houses</td>
+      <td>Aerial Exploration of Majestic Landscapes with Drones transitions to Backyard</td>
+      <td>Yosemite Kenwal House</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>25-Jan-15</td>
+      <td>Korea Middle School Short Stay Plan</td>
+      <td>Implementing the Mysterious Plan as Departure from Korea Approaches</td>
+      <td>Korea</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>22-Jan-15</td>
+      <td>Celebrity Car Conflict Bomb Adventure</td>
+      <td>Celebrity limo ride morphs into car conflict and bomb defusal</td>
+      <td>In a limo In cars</td>
+      <td>118</td>
+    </tr>
+    <tr>
+      <td>17-Jan-15</td>
+      <td>Explicit Content Adult Themes Friendship Dating Sexuality Confusion Recurring Dream</td>
+      <td>Dreamer Ponders Recurring Sexual Encounters in Seemingly Neverending Dream</td>
+      <td>Not specified</td>
+      <td>104</td>
+    </tr>
+    <tr>
+      <td>13-Jan-15</td>
+      <td>Exrelationship Jealousy Resentment Independence</td>
+      <td>Rekindling Old Flames</td>
+      <td>Not Mentioned</td>
+      <td>79</td>
+    </tr>
+    <tr>
+      <td>04-Jan-15</td>
+      <td>Dream Reddit Supermarket Taxi Crime Scene School Explicit Content Travel Family Conflict</td>
+      <td>A Chaotic Dreamscape of Crime Scenes Travel and Familial Struggles</td>
+      <td>Reddits front page Supermarket Crime Scene New School village near Krtsanisi Georgia Southern California Northern California Germany Tahoe Davis Bay Area</td>
+      <td>1469</td>
+    </tr>
+    <tr>
+      <td>20-Dec-14</td>
+      <td>Sexual Activity Interpersonal Relationships Cultural Family Work</td>
+      <td>Sexual Encounter Amid Uncomfortable Family Interactions and Work Stress</td>
+      <td>Greats House</td>
+      <td>116</td>
+    </tr>
+    <tr>
+      <td>20-Dec-14</td>
+      <td>Leaving Home Buffet Phone Misplaced Items Family Anxiety</td>
+      <td>Unsettled Diner Grapples With Forgotten Belongings</td>
+      <td>Orinda Sizzler or similar buffet restaurant Greats house</td>
+      <td>143</td>
+    </tr>
+    <tr>
+      <td>20-Dec-14</td>
+      <td>School Gym Basketball Teaching Memory Communication</td>
+      <td>Past and Present Intersect in School Setting</td>
+      <td>Silverwood Elementary School Nakijin JHS</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <td>17-Dec-14</td>
+      <td>Dream interpretation Unusual sleeping arrangement Large mansion Riverside property City life Anger Conflict Attempt at peace</td>
+      <td>Surrounded by luxury and chaos</td>
+      <td>Riverside property in Bangkok Beach Inside Mansion</td>
+      <td>293</td>
+    </tr>
+    <tr>
+      <td>17-Dec-14</td>
+      <td>Puppies Friends Motorbike Driving Police Bribery Thailand</td>
+      <td>The Adventure of Dalmatian Puppies and a Thai Checkpoint Encounter</td>
+      <td>Concord Concord High Thailand</td>
+      <td>252</td>
+    </tr>
+    <tr>
+      <td>19-Nov-14</td>
+      <td>US High school reunion Shopping Mall Friends Unexpected</td>
+      <td>Unexpected High School Reunion in Shopping Mall Leads to Shocking Escapade</td>
+      <td>US Mall</td>
+      <td>111</td>
+    </tr>
+    <tr>
+      <td>04-Nov-14</td>
+      <td>Change Nostalgia Loss Transition</td>
+      <td>Unforgettable Memories of DTA Apartment Complex Wiped from Davis Landscape</td>
+      <td>Davis DTA apartment complex</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>30-Oct-14</td>
+      <td>Travel Flight America Friends Accommodation</td>
+      <td>An Eventful Flight to America with Friends and Affordable Accommodation Suggestion</td>
+      <td>America DVC</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>29-Oct-14</td>
+      <td>Party Drugs Suspicion Prank Parents House</td>
+      <td>Druginduced Prank Ignites Party Suspicion and Anger</td>
+      <td>America House</td>
+      <td>96</td>
+    </tr>
+    <tr>
+      <td>23-Sep-14</td>
+      <td>Friendship Living situation Desire Bangkok Loneliness</td>
+      <td>Close Interactions and Sharing Personal Feelings in Dream Neighborly Relations</td>
+      <td>Bangkok Jeanette Norriss home</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>07-Sep-14</td>
+      <td>Adventure Erotica Theft Racing Social Interaction Anxiety</td>
+      <td>Unsettling Dream Unfurls an Epic Night in Bangkok</td>
+      <td>Bangkok hotel gym streets stairs phone call location</td>
+      <td>453</td>
+    </tr>
+    <tr>
+      <td>10-Aug-14</td>
+      <td>Wet Dream Lucid Dream Sexual Dream Dream Control</td>
+      <td>Dreamer Experiences Lucid Erotic Dream and Loses Control</td>
+      <td>Chotikas apartment shaped like the dreamers own Phuket inferred from described participant</td>
+      <td>182</td>
+    </tr>
+    <tr>
+      <td>07-Aug-14</td>
+      <td>Party Alcohol Concern Threat Unfamiliar characters Celebrity Gunfight</td>
+      <td>Dreamer Struggles With Party Concerns Encounter With Foreign Transgender Women and Observes Celebrity Gunfight</td>
+      <td>Unnamed House America Unnamed Gun Shop Upstairs in an Apartment</td>
+      <td>247</td>
+    </tr>
+    <tr>
+      <td>04-Aug-14</td>
+      <td>School Trip Anxiety Motorcycle Taxi Concert Bob Dylan Aging</td>
+      <td>Hustle of a School Trip and Surprising Concert Experience in MultiDream Scenario</td>
+      <td>Home Docks Bob Dylan Concert</td>
+      <td>105</td>
+    </tr>
+    <tr>
+      <td>29-Jul-14</td>
+      <td>Visitation Disapproval Drugs Forced Activity Unhappiness Intercountry</td>
+      <td>Uncomfortable International Visit Evokes Past Disapproval and Unwanted Drug Use</td>
+      <td>Fredricks family house In a car Foreign country</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td>26-Jul-14</td>
+      <td>Confusion Guilt Fear Secret</td>
+      <td>Dreamers Secret Job Surfaces</td>
+      <td>ECC Home</td>
+      <td>138</td>
+    </tr>
+    <tr>
+      <td>23-Jul-14</td>
+      <td>High School Reunion Making Cookies Clothing Feeling Out Of Place</td>
+      <td>Standing Out in Red at High School Reunion</td>
+      <td>High School Reunion Store</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>18-Jul-14</td>
+      <td>School trip Friendship Difficulty in communication Dental issues</td>
+      <td>School Trip to USA Leads to Unfinished Assignment Communication Issues and Dental Distress</td>
+      <td>USA</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td>13-Jul-14</td>
+      <td>Travel Conversation Beach Shopping Boating</td>
+      <td>Border Discussion and Beachside Shopping Lead to Unexpected Departure</td>
+      <td>A country bordering Argentina Big beach Supermarket Home</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td>08-Jul-14</td>
+      <td>Lost Items Anger Concert Invitation Highschool Reunion Beautiful Place Unusual Clothing Memories Skipping Lecture Found Items Racing Beach Playful Behavior</td>
+      <td>High School Reunion Turned Beach Race in a Surreal Stanford University Experience</td>
+      <td>Concord flag hill park Stanford university High school Beach</td>
+      <td>224</td>
+    </tr>
+    <tr>
+      <td>09-Jun-14</td>
+      <td>Education Fear Achievement Transportation Interaction</td>
+      <td>Overcoming classroom fears and journeying on tricycle taxi</td>
+      <td>Classroom Taxi</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>13-May-14</td>
+      <td>Restaurant Conflict Dream within a Dream Gun Foreign Locations Motorcycle</td>
+      <td>Conflict Unfolds at Japanese Restaurant in Thailand Rude Customer Returns with Firearm</td>
+      <td>Japanese restaurant Thailand</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>13-May-14</td>
+      <td>Motorbike Racing Speed Risk Competition</td>
+      <td>HighSpeed Motorbike Race with Near Crash</td>
+      <td>Thanon Street in Thai</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>12-May-14</td>
+      <td>Violence Guilt Conflict Fear</td>
+      <td>Inner Turmoil and Uncontrollable urges</td>
+      <td>Unspecified building</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>11-May-14</td>
+      <td>Sexual College Life Relationships Conversation House Desert</td>
+      <td>A Threesome Gossip and Relationship Talk with an Old Acquaintance at Davis</td>
+      <td>Hanks dorm Davis Matts house desert</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td>07-May-14</td>
+      <td>Friend Food Car Parking Lot Restaurant Unexpected Encounter Popular Culture</td>
+      <td>Dreamer and Friend Confronted by Fictional Character over Culinary Preference</td>
+      <td>Car Parking Lot Restaurant</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>29-Apr-14</td>
+      <td>Sex High School Memories Transformation</td>
+      <td>High School Memories and Transformation Fuel Erotic Dream</td>
+      <td>Not Specified</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>26-Apr-14</td>
+      <td>Breaking Bad Walter White Work Money Coworkers Dream</td>
+      <td>Walter White Guides Dreamer into Lucrative Illicit Endeavors in Ambiguous Workplace</td>
+      <td>Workplace School Area</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td>23-Apr-14</td>
+      <td>Addiction Family Secrecy Road Trip Celebrities</td>
+      <td>Concealing Drug Abuse on a Road Trip with a Celebrity</td>
+      <td>Home Adam Newachecks House Road Trip</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>18-Apr-14</td>
+      <td>Death Resurrection Transformation Work Dilemma</td>
+      <td>Pixis Death and Rebirth Tied with Job Uncertainty at Honda</td>
+      <td>Honda Dealership Afghanistan</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <td>31-Mar-14</td>
+      <td>Addiction Substance Abuse Fighting Friendship Reflection</td>
+      <td>Struggling With Meth Addiction and Dependence on Friends</td>
+      <td>Not mentioned</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td>26-Mar-14</td>
+      <td>Guam Breaking Bad Pharmacy Ceiling 30Rock</td>
+      <td>An Unexpected Adventure in Guam with Breaking Bad and 30Rock Characters</td>
+      <td>Guam Pharmacy</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>23-Mar-14</td>
+      <td>Pregnancy Family Relationships Conflict Emotion</td>
+      <td>Romantic Conundrum Imposed by Unexpected Pregnancy in Dream</td>
+      <td>America House</td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <td>15-Mar-14</td>
+      <td>Dream Bangkok Travel Misunderstanding Candy Restaurant Theft</td>
+      <td>Lost and Found</td>
+      <td>Bangkok Restaurant Apartment</td>
+      <td>118</td>
+    </tr>
+    <tr>
+      <td>15-Mar-14</td>
+      <td>Travel Friendship Architecture Countryside Foreign culture</td>
+      <td>Majestic Journey Through Thai Countryside With Friend Reveal Stunning Architectural Fantasies</td>
+      <td>Thai countryside TrainRoad alongside a cliff</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>01-Mar-14</td>
+      <td>Dream Analysis Movies Celebrity encounter Evasion</td>
+      <td>Dreamer Discusses Metadream with Breaking Bads Walter</td>
+      <td>Elevator</td>
+      <td>45</td>
+    </tr>
+    <tr>
+      <td>21-Feb-14</td>
+      <td>War Conflict Relationships Fear Survival</td>
+      <td>Complex Struggles In Love And War</td>
+      <td>Libya or some Middle Eastern country escalator market James house</td>
+      <td>189</td>
+    </tr>
+    <tr>
+      <td>17-Feb-14</td>
+      <td>Celebrity Interaction Fear Anxiety Road Trip Reunion</td>
+      <td>Comedian Bartender Breathtaking Mountain View and A Joyful Reunion</td>
+      <td>Bar Highest Mountain America California Parking Lot</td>
+      <td>163</td>
+    </tr>
+    <tr>
+      <td>12-Feb-14</td>
+      <td>Travel Family Disorientation Pets Home</td>
+      <td>Dreamer Shuttles Between America and Thailand Amidst Family Changes</td>
+      <td>America Thailand</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <td>11-Feb-14</td>
+      <td>Technology Problems Moving Family Disbelief Love Interest</td>
+      <td>Family Relocate to Separate Units in DTA Dreamer Develops Love Interest and Faces Technological and Personal Challenges</td>
+      <td>DTA Ocean House</td>
+      <td>99</td>
+    </tr>
+    <tr>
+      <td>10-Feb-14</td>
+      <td>Driving Accident Police Restaurant Language</td>
+      <td>HighSpeed Reverse Drive Leads to Crash and Police Involvement</td>
+      <td>Parking Lot Restaurant</td>
+      <td>95</td>
+    </tr>
+    <tr>
+      <td>05-Feb-14</td>
+      <td>Dream Sharapova Identity Unexpected Visitor House Meeting Dating</td>
+      <td>Chotikas admiration for Sharapova triggers unexpected events at dreamers home</td>
+      <td>Dreamers fathers house Bar</td>
+      <td>128</td>
+    </tr>
+    <tr>
+      <td>04-Feb-14</td>
+      <td>Cruise Friends Family Alcohol Drugs Anxiety</td>
+      <td>Family and Friends Engage in Wilful Indulgence during a Cruise Trip to Phuket</td>
+      <td>Cruise boat Phuket</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>04-Feb-14</td>
+      <td>Fear Math Insecurity Intimacy Aggression Theft</td>
+      <td>Fear and Insecurities Interwoven with Physical Intimacy and Confrontation Over Lost Shoe</td>
+      <td>Top floor of a Building SF</td>
+      <td>184</td>
+    </tr>
+    <tr>
+      <td>30-Jan-14</td>
+      <td>Aging Reality Perception</td>
+      <td>Dreamer Confronts Sensation of Aging</td>
+      <td>None</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>27-Jan-14</td>
+      <td>Travel Sex Family Conflict Translation</td>
+      <td>Bizarre Trip to Myanmar Turns into PlanetoBoat Journey with Identity Confusion</td>
+      <td>Myanmar the car hotel plane taxi boat</td>
+      <td>216</td>
+    </tr>
+    <tr>
+      <td>25-Jan-14</td>
+      <td>Hotel Team Japan Streets Car Argument Lost</td>
+      <td>Annoying Collaborator and Boring Meeting Lead to Unauthorized Car Use and Lost in Streets</td>
+      <td>Hotel Tohaka Japan San Francisco</td>
+      <td>89</td>
+    </tr>
+    <tr>
+      <td>17-Jan-14</td>
+      <td>Work Theatre Colleagues Conspiracy Dreams</td>
+      <td>Theater Employee Contributes to Special Movie Showing Colleague Steals Essential Pepsi Mix</td>
+      <td>Theater</td>
+      <td>69</td>
+    </tr>
+    <tr>
+      <td>14-Jan-14</td>
+      <td>Car Driving Family Thailand Dream within dream Older Couple Vacation</td>
+      <td>Dreamer Experiences Eventful Journey in Thailand and Meets Intriguing Couple</td>
+      <td>Thailand Restaurant</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>13-Jan-14</td>
+      <td>Jealousy Relationships Unusual behavior</td>
+      <td>Unusual Interaction Between Brett and Chotika Upsets Dreamer</td>
+      <td>Not mentioned</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>11-Jan-14</td>
+      <td>Running New Girl High School Students Building Ten K Run</td>
+      <td>FundRaising Ten K Run Saw High School Students Living in Huge Building and a New Romance in Progress</td>
+      <td>Huge Building</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>08-Jan-14</td>
+      <td>Train Station High School Friends Lost Love Anxiety</td>
+      <td>Dreamer Misses Train and Feels Loss of Connection with Familiar Faces</td>
+      <td>Train Station</td>
+      <td>179</td>
+    </tr>
+    <tr>
+      <td>06-Jan-14</td>
+      <td>High School Reunion Mall Dream Interpretation Jumping Off Protests</td>
+      <td>High School Reunion Takes a Deadly Turn</td>
+      <td>Shopping Mall BKK Bangkok</td>
+      <td>76</td>
+    </tr>
+    <tr>
+      <td>04-Jan-14</td>
+      <td>Relationships Breakups Friendship</td>
+      <td>A Carousel of Romantic Relationships in Dreamland</td>
+      <td>Not specified</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>02-Jan-14</td>
+      <td>Relationship Exgirlfriend Student Host Family</td>
+      <td>Dreamer Rekindles Relationship with ExGirlfriend and Connects with Student in California Host Family Situation</td>
+      <td>California Thailand</td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <td>27-Dec-13</td>
+      <td>Family Interaction Learning Language Study Technology</td>
+      <td>Grandpas Anger Turns Into Japanese Lesson</td>
+      <td>Home</td>
+      <td>68</td>
+    </tr>
+    <tr>
+      <td>22-Dec-13</td>
+      <td>Obsessive Compulsive Disorder Confusion Interpersonal interaction</td>
+      <td>Intrusive Dream or Forgotten Act</td>
+      <td>No specific locations mentioned</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td>19-Dec-13</td>
+      <td>Family Language Learning Making a Movie Stunts</td>
+      <td>Domestic Life Meets Thrilling Stunts in Unexpected Dream Sequence</td>
+      <td>Georgia implied</td>
+      <td>165</td>
+    </tr>
+    <tr>
+      <td>08-Dec-13</td>
+      <td>Change Fathers House Cultural Event Guest Personal Relationship Project</td>
+      <td>Transformative Change Occurs in Fathers Neighbourhood Dreamer Faces Questions about Relationship with House Guest</td>
+      <td>Dads House The Neighbourhood Garage</td>
+      <td>187</td>
+    </tr>
+    <tr>
+      <td>07-Dec-13</td>
+      <td>Age Difference Embarrassment Relationship</td>
+      <td>Chotikas Unexpected Elderly Companion</td>
+      <td>Not specified</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>28-Nov-13</td>
+      <td>Swimming Whales Privacy Embarrassment Communication</td>
+      <td>Swim with Whales Experience Interrupted Leads to Awkward Encounter</td>
+      <td>Private pool Bay area Home</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <td>20-Nov-13</td>
+      <td>Dream Analysis Friends Stress House Concern Adventure</td>
+      <td>Adventure Friendship and Concern Amidst Outgoing Friends</td>
+      <td>Saris House Street</td>
+      <td>145</td>
+    </tr>
+    <tr>
+      <td>20-Nov-13</td>
+      <td>Accusation Unjustified Accusation Disturbance Home</td>
+      <td>Dreamer Denied Accusations of Young Boy Smell at Friends House</td>
+      <td>Saris House</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>16-Nov-13</td>
+      <td>Guest House Conflict Memory Friends</td>
+      <td>Friends Visit stirs memories and triggers conflict</td>
+      <td>California Washington DC house</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>15-Nov-13</td>
+      <td>Relationship Lovers Party Birthday Speech Skiing Glasses</td>
+      <td>Visiting Two Lovers and Attending Hersheys Birthday With Unusual Characters</td>
+      <td>The houses of the dreamers lovers</td>
+      <td>103</td>
+    </tr>
+    <tr>
+      <td>07-Nov-13</td>
+      <td>Family Hotel Accident Death Emotion Fear</td>
+      <td>Tragic Family Gathering Witness Unfortunate Flying Accident from Highrise Hotel</td>
+      <td>Hotel Skyscraper</td>
+      <td>109</td>
+    </tr>
+    <tr>
+      <td>06-Nov-13</td>
+      <td>Planning School Friends Hanging out Early Morning</td>
+      <td>Early Morning Planning for a Short Hangout at School</td>
+      <td>mhs school</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>05-Nov-13</td>
+      <td>River Recurring dream Ice Road Car Nasty River Whirlpools Survival Mobile phone</td>
+      <td>Perilous Drive with Alexis</td>
+      <td>River Ice road</td>
+      <td>84</td>
+    </tr>
+    <tr>
+      <td>05-Nov-13</td>
+      <td>Language Learning Friendship Transportation Mall</td>
+      <td>Language Learning Road Trip with Friend at Mall</td>
+      <td>Mall Parking Lot</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>05-Nov-13</td>
+      <td>Tension Conflict Travel Friendships</td>
+      <td>Tense Social Gathering Leads to Unexpected Journey and Unusual Encounters</td>
+      <td>Alex Bigmans house Honda Jazz</td>
+      <td>117</td>
+    </tr>
+    <tr>
+      <td>05-Nov-13</td>
+      <td>TV Horrible Movies Music Videos Manuel Varela Kim Anthony Hyer</td>
+      <td>Dreamer Watches Bad Entertainment Featuring Manuel Varela Kim and Anthony Hyer</td>
+      <td>Not mentioned</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>04-Nov-13</td>
+      <td>Bridge Driving Mountain Fear Fight Adventure Poverty Drink</td>
+      <td>Conquering Steep Heights and Altercations</td>
+      <td>Mountain Bridge Bubble tea shop</td>
+      <td>150</td>
+    </tr>
+    <tr>
+      <td>04-Nov-13</td>
+      <td>High School Reunion Friends Missing someone Affection</td>
+      <td>High School Reunion Stirring Up Strong Emotions</td>
+      <td>Arias House</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td>02-Nov-13</td>
+      <td>Car BMW Dad Inconvenience Confusion</td>
+      <td>Unexpected Purchase of Extravagant BMW Causes Disarray</td>
+      <td>Not specifically mentioned</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>31-Oct-13</td>
+      <td>Wilderness Park Alexis Hill Creek Swimming Protective suit Water creatures</td>
+      <td>Swimming Unfazed Among Water Creatures in a Wilderness Park</td>
+      <td>Wilderness Park Hill Creek</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>19-Oct-13</td>
+      <td>Late Missed Class Thai Language Breakfast Desire</td>
+      <td>Late Arrival Causes Missed Thai Language Class Dreamer Still Wishes to Attend</td>
+      <td>None</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>18-Oct-13</td>
+      <td>Dream Music Festival Submission Fear Guilt Threatening Racism Career Decision Family Animals Morality</td>
+      <td>Racial Tension Facing a Moral Dilemma and Fear of Running out of Electronic Cigarette</td>
+      <td>Music festivalBurning Man event Concord Clayton road parking lot</td>
+      <td>413</td>
+    </tr>
+    <tr>
+      <td>14-Oct-13</td>
+      <td>Graduation Thankfulness Noise Late Arrival Reunion</td>
+      <td>Dreamer Causes a Stir at GraduationturnedReunion Ceremony</td>
+      <td>Graduation Ceremony</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td>13-Oct-13</td>
+      <td>Speed Discomfort Danger Falling</td>
+      <td>Highspeed Cornering Leads to Fall Off Road</td>
+      <td>Unspecified Road</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>12-Oct-13</td>
+      <td>Friendship Participation Language Learning Smoking Birthday Isolation</td>
+      <td>Friendly Encounters Language Learning and a Lonesome Birthday</td>
+      <td>Parking Lot Thomass Car</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>07-Oct-13</td>
+      <td>Time travel Regression Confusion Family Selfconsciousness Fear Introspection</td>
+      <td>Unexpected TimeTravel</td>
+      <td>BKK Bangkok</td>
+      <td>157</td>
+    </tr>
+    <tr>
+      <td>06-Oct-13</td>
+      <td>Politics Power Influence Fear Responsibility Forgotten belongings</td>
+      <td>Dreamer envisions potential political influence under hardliners rule</td>
+      <td>Iran LA a forest near the hill on 5</td>
+      <td>123</td>
+    </tr>
+    <tr>
+      <td>06-Oct-13</td>
+      <td>Work Automobile Nature Insects Emotions</td>
+      <td>Formerly Owned Volvo Turns into an Unexpected Habitat for Bugs in Repair Shop</td>
+      <td>Auto Repair Shop</td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <td>05-Oct-13</td>
+      <td>Internship Pressure Young people America</td>
+      <td>Stressful Internship Experience Among Young Peers in America</td>
+      <td>America</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>23-Sep-13</td>
+      <td>Friendship Celebration Disappointment Sobriety</td>
+      <td>MemoryLaden New Years Eve Marred by Rude Bartender and Disappointment</td>
+      <td>College Country Hillside Bar</td>
+      <td>83</td>
+    </tr>
+    <tr>
+      <td>17-Sep-13</td>
+      <td>Euthanizing Cutting Transformation Dream within a Dream Uncertainty</td>
+      <td>Unsettling Task Transforms into Surreal Encounter with Transfigured CatHuman</td>
+      <td>Unidentified House</td>
+      <td>222</td>
+    </tr>
+    <tr>
+      <td>16-Sep-13</td>
+      <td>High School Car Companion Impression Doing Tricks</td>
+      <td>Impressions from Kurbiss Tricks at School Returns Dreamer Ponders Over His Way Home</td>
+      <td>High School Car</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>14-Sep-13</td>
+      <td>Shopping Uncertainty Darkness Exploration Interpersonal Interaction Water</td>
+      <td>Transforming City Mall Exploration and Disturbing Social Interaction</td>
+      <td>Big City Best Buy Store Unknown Electronic Store Multilevel Mall Indoor Babylonlike Water Landscape</td>
+      <td>209</td>
+    </tr>
+    <tr>
+      <td>12-Sep-13</td>
+      <td>Travel Mattress River Train Station Suitcase Theft Confrontation Captivity Relationships</td>
+      <td>An Adventurous Journey of Change Ends in Captivity and Relationship Insights</td>
+      <td>ChicoDavis Bay Area Train Station Concrete River</td>
+      <td>343</td>
+    </tr>
+    <tr>
+      <td>11-Sep-13</td>
+      <td>Sexual Theme Peer Interaction Pressure Inability Discomfort</td>
+      <td>High School Acquaintance Pressures Dreamer in Sexual Situation</td>
+      <td>Not mentioned</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>11-Sep-13</td>
+      <td>Tour House High School Forgotten Details</td>
+      <td>High School House Tour Filled with Unremembered Oddities</td>
+      <td>House High School</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>08-Sep-13</td>
+      <td>Airplane Flight Disaster Survival Mountain Winter Family Hiking</td>
+      <td>Dramatic Flight Ends in Impromptu Sierra Cabin Gathering</td>
+      <td>Sierras unknown cabin</td>
+      <td>169</td>
+    </tr>
+    <tr>
+      <td>08-Sep-13</td>
+      <td>Music videos Family Skill</td>
+      <td>Dylan Haight Excels in Music Video Identification Game</td>
+      <td>Not mentioned</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>08-Sep-13</td>
+      <td>Train Station Passport Ticket Purchase Prostitute Ad Crowd</td>
+      <td>Unpleasant Experience in Grungy Urban Train Subway Station</td>
+      <td>Urban TrainSubway Station</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>07-Sep-13</td>
+      <td>Miscommunication Language barriers Architectures</td>
+      <td>Language Barriers and Misinterpretations Cloud Communication Amidst City Skyscrapers</td>
+      <td>Unnamed city</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td>03-Sep-13</td>
+      <td>Dream Car Accident Chase Bangkok Dream Reset</td>
+      <td>Repeated Car Crashes and Reality Resets in DreamState Bangkok Adventure</td>
+      <td>Bangkok Unidentified Building Taxi Main Road</td>
+      <td>175</td>
+    </tr>
+    <tr>
+      <td>01-Sep-13</td>
+      <td>Family Travel Conflict Planning Authority</td>
+      <td>Family Trip to Copenhagen Sparks Conflict Over DecisionMaking and Exclusion</td>
+      <td>Home Coppenhagen perhaps a dream version of Copenhagen</td>
+      <td>162</td>
+    </tr>
+    <tr>
+      <td>01-Sep-13</td>
+      <td>Mystery Identity Shift Friendship High School Crush Awkwardness</td>
+      <td>High School Crush Turns Stranger in Unpredictable Condo Dream</td>
+      <td>Condo Building busy lobby elevator dreamers room</td>
+      <td>262</td>
+    </tr>
+    <tr>
+      <td>31-Aug-13</td>
+      <td>Friendship Exploration Interacting MultiCultural Dream Talking</td>
+      <td>The Dreamer Participates Multicultural Event and Establishes Friendship</td>
+      <td>Chico mentioned UCDC mentioned</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <td>30-Aug-13</td>
+      <td>High School Reunion Missed Opportunity Regret Social Media</td>
+      <td>Longing for Missed High School Reunion Spurs Social Media Contact</td>
+      <td>Not Specifically Mentioned</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>25-Aug-13</td>
+      <td>Family Waking Up Dream within a Dream</td>
+      <td>Dream Emergence from False Awakening Triggered by Fathers Call</td>
+      <td>Not specific</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>23-Aug-13</td>
+      <td>Travel Regret Guilt Abandonment Dream Emotional distress</td>
+      <td>A Dream of Guilt and Regret</td>
+      <td>Thailand SFO San Francisco International Airport</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>21-Aug-13</td>
+      <td>High School Student Relationship Adventure Travel China Assembly Breakup</td>
+      <td>High School Student Considers Breaking up with Girlfriend Over Proposed Trip to China</td>
+      <td>High School China</td>
+      <td>155</td>
+    </tr>
+    <tr>
+      <td>21-Aug-13</td>
+      <td>Home Intrusion Fear Confrontation Regret</td>
+      <td>Unwanted Visitors Invade Privacy Trigger Fear and Regret</td>
+      <td>Dads house yard driveway</td>
+      <td>114</td>
+    </tr>
+    <tr>
+      <td>20-Aug-13</td>
+      <td>Zombie Attack Violence Fear Guilt Arrest</td>
+      <td>Apocalyptic Zombie Outbreak Leads to Accidental Murders and Arrest</td>
+      <td>House Okinawa Local supermarket Nakijin</td>
+      <td>164</td>
+    </tr>
+    <tr>
+      <td>20-Aug-13</td>
+      <td>Dream Survival Game Competition Conflict Chase Strategy</td>
+      <td>Fierce Survival Game Sparks Conflict and Strategy Among Friends</td>
+      <td>San Francisco Google building</td>
+      <td>136</td>
+    </tr>
+    <tr>
+      <td>20-Aug-13</td>
+      <td>School Dating Sex Awkward encounter Conflict</td>
+      <td>Awkward and Tense Encounters Pepper a Newly Formed School Relationship</td>
+      <td>Nakijin JHS</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>19-Aug-13</td>
+      <td>Dream Condos Tour Mieko Move Ocean Mountainous Islands</td>
+      <td>Dream Tour of Diverse Condos Ends on Greeklike Island Scenery</td>
+      <td>BKK Greecelike mountainous islands</td>
+      <td>102</td>
+    </tr>
+    <tr>
+      <td>19-Aug-13</td>
+      <td>Reoccurring Dream School Teaching Peer Interaction Travel Desire Public Space</td>
+      <td>Overwhelming Educational Responsibilities Meet Desire and Wanderlust in Recurring Dream</td>
+      <td>Polings Class Desk Taxi Japan Target Asia Festival</td>
+      <td>153</td>
+    </tr>
+    <tr>
+      <td>08-Aug-13</td>
+      <td>Ruins Egypt Greece Party Solitude</td>
+      <td>Solitary Exploration Of International Ruins Amongst Revelers</td>
+      <td>Outdoor area with ruins Egyptian walkway bridge Stream</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td>06-Aug-13</td>
+      <td>Party Social Interactions Friends Assertiveness</td>
+      <td>MHS House Party</td>
+      <td>House specifics not provided MHS specifics not provided</td>
+      <td>119</td>
+    </tr>
+    <tr>
+      <td>06-Aug-13</td>
+      <td>Health Walk Orinda Oakland Thailand Vagrants Busy Streets Beautiful Views</td>
+      <td>Healthy Stroll from Orinda to Oakland Transforms into Thai Street Adventure</td>
+      <td>Orinda Oakland Thailand Oakland Hills</td>
+      <td>76</td>
+    </tr>
+    <tr>
+      <td>06-Aug-13</td>
+      <td>Building Grandmas apartment Office building Party Maids Cleaners Staircase Door Elevator</td>
+      <td>Navigating a Locked Complex</td>
+      <td>Grandmas Apartment Condo Office Building Staircase Elevator</td>
+      <td>81</td>
+    </tr>
+    <tr>
+      <td>06-Aug-13</td>
+      <td>Mall Auditorium Performances Oratai Music Dancing Singing Japan</td>
+      <td>Music Performances Draws Mixed Reactions at Mammoth Mall Oratai Mysteriously Disappears</td>
+      <td>Huge Mall America Phuket mentioned Japan implied</td>
+      <td>202</td>
+    </tr>
+    <tr>
+      <td>05-Aug-13</td>
+      <td>Travel Foreigners Hostility Dinner Party Conflict Video Games Rebellion</td>
+      <td>Tension and Rebellion in Germany</td>
+      <td>Georgia Germany France</td>
+      <td>145</td>
+    </tr>
+    <tr>
+      <td>04-Aug-13</td>
+      <td>Family Gathering Café Dream Characters Fruit Pie Computers Politics</td>
+      <td>Family Café Gathering Centered on Unique Fruit Pie and Political Research</td>
+      <td>Café Lounge</td>
+      <td>131</td>
+    </tr>
+    <tr>
+      <td>03-Aug-13</td>
+      <td>Dream Interpretation Translation Work Conflict Social Event</td>
+      <td>Dreamer Aids in Translation Work Experiences Family Conflict and Apathy Towards Social Interactions</td>
+      <td>Japan CAPlike workplace Whitneydormlike dormitory</td>
+      <td>131</td>
+    </tr>
+    <tr>
+      <td>03-Aug-23</td>
+      <td>Assault on Farms Conspiracy Journalism Group Dynamics Social Isolation</td>
+      <td>Conspiracy Narrated by Reporter on Farm Assaults Unveils Underlying Group Dynamics</td>
+      <td>Farm Airport Farm Class Research Scene</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <td>02-Aug-13</td>
+      <td>Farm Research Farmer House Preparations Car Painting</td>
+      <td>Dreamer Visits A Farmers DefensePrepared Homestead</td>
+      <td>Farm Small house Old Car</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>01-Aug-13</td>
+      <td>Dream Social Interaction Friends Town Feelings</td>
+      <td>Shared Social Disconnection in Unknown Town</td>
+      <td>Miramonte Unknown Town</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>31-Jul-13</td>
+      <td>Bridge Crossing Car Jump Danger Escape Water</td>
+      <td>Thrilling Bridge Jump Goes Awry Dreamer and Companion Escape Safely</td>
+      <td>Bridge</td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <td>31-Jul-13</td>
+      <td>Travel Friends Adventure</td>
+      <td>Adventurous Road Trip with Thomas and David Luther</td>
+      <td>Not specified</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>30-Jul-13</td>
+      <td>Stadium Gaming Friends Monster Attack Photography Shopping</td>
+      <td>Mega Screen Gaming Experience Transitions to Giant Mall Shopping Interactions</td>
+      <td>Stadium Outdoorindoor mall</td>
+      <td>128</td>
+    </tr>
+    <tr>
+      <td>28-Jul-13</td>
+      <td>Shooting Dogs Monsters Snail Fear Morphing</td>
+      <td>Guns and Monsters</td>
+      <td>None</td>
+      <td>98</td>
+    </tr>
+    <tr>
+      <td>27-Jul-13</td>
+      <td>Social Event Bathroom Puzzle Comical Frustration Friend Interaction</td>
+      <td>Frustration and Humor at Social Event over Peculiar Bathroom Scenario</td>
+      <td>Social Event Bathroom Someones Front Yard</td>
+      <td>145</td>
+    </tr>
+    <tr>
+      <td>26-Jul-13</td>
+      <td>School Reunion Accident Escalator Friendship Conflict</td>
+      <td>Accidental Push Leads to Anger and Broken Friendship in a School Setting</td>
+      <td>Class Escalator Stairs</td>
+      <td>83</td>
+    </tr>
+    <tr>
+      <td>25-Jul-13</td>
+      <td>Past College Dorm ID Unfaithfulness Denial</td>
+      <td>Nostalgia Turns into Revelations of Unfaithfulness in College Dorm</td>
+      <td>Freshmen Dorms High Floor</td>
+      <td>116</td>
+    </tr>
+    <tr>
+      <td>24-Jul-13</td>
+      <td>Intimacy Memory Mixing Desire</td>
+      <td>Dreamers Vivid Sensual Dream with Former Classmate Nadia Creates Confusion Between Reality and Fantasy</td>
+      <td>Davis</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>23-Jul-13</td>
+      <td>Travel Adventure Assistance Nature Danger</td>
+      <td>Navigating Danger on a Steep Natural Escape</td>
+      <td>National Park Dirt road</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>20-Jul-13</td>
+      <td>Hiding Escape Phone Friends Boyfriend Meditation</td>
+      <td>A Close Escape from Friends Boyfriend Leads to Thrilling Getaway</td>
+      <td>Bathroom Staircase Meditation Building Futuristic Car</td>
+      <td>109</td>
+    </tr>
+    <tr>
+      <td>19-Jul-13</td>
+      <td>Relationship Confusion Desire Restrictions Regret</td>
+      <td>Tension and Unfulfilled Desire with Nicole</td>
+      <td>Not specified</td>
+      <td>74</td>
+    </tr>
+    <tr>
+      <td>18-Jul-13</td>
+      <td>Sexual Intimacy Social Interaction Insecurity Awkwardness Strained Relationships</td>
+      <td>Tense Sexual Encounters and Awkward Social Interactions</td>
+      <td>Not specified</td>
+      <td>116</td>
+    </tr>
+    <tr>
+      <td>17-Jul-13</td>
+      <td>Travel Meeting Family Engagement Surprise</td>
+      <td>Unexpected Engagement and Family Meetings in Unknown City</td>
+      <td>Unknown city airport</td>
+      <td>107</td>
+    </tr>
+    <tr>
+      <td>12-Jul-13</td>
+      <td>Modeling Social Interactions Peer Pressure Pleasure Discontent</td>
+      <td>Dreamer Becomes Model and Negotiates Social Pressures</td>
+      <td>Not explicitly stated</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>19-Jun-23</td>
+      <td>Friendship Dining Fear Accident Emergency Storytelling</td>
+      <td>A Lunch Loaded with Potential Danger and a Crane Accident in a Foreign Location</td>
+      <td>Danville Orinda Thailand Barbara rd camp</td>
+      <td>123</td>
+    </tr>
+    <tr>
+      <td>18-Jun-23</td>
+      <td>Family Travel Shopping Mall Thailand</td>
+      <td>A Casual Mall Day With Father in Thailand</td>
+      <td>Thailand Shopping Mall</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>17-Jun-23</td>
+      <td>Family Beach House University Town Memory Friends Moving</td>
+      <td>Family and Friends Unite in University Beach House Evoking Memories of Past Moves</td>
+      <td>BeachUniversity Town House Thailand Okinawa</td>
+      <td>130</td>
+    </tr>
+    <tr>
+      <td>16-Jun-13</td>
+      <td>Public Transportation Announcement Warning Station Closure</td>
+      <td>BART Station Shuts Down amid Public Service Warning</td>
+      <td>BART station East Oakland station</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>16-Jun-13</td>
+      <td>Questioning Language Barrier Exhibition Joke Laughter</td>
+      <td>Language Lesson Turns Into Bizarre Display of Body Alteration</td>
+      <td>No specific location mentioned</td>
+      <td>146</td>
+    </tr>
+    <tr>
+      <td>15-Jun-13</td>
+      <td>Cruise Friends Pressure Packing Dreaming</td>
+      <td>Dreamer Feels Torn About Joining Extended Cruise Trip</td>
+      <td>Cruise Volvo station wagon Precruise party on shore</td>
+      <td>179</td>
+    </tr>
+    <tr>
+      <td>12-Jun-13</td>
+      <td>Dream Pirates Chase Danger Shaq Australia Sharks Beach Rescue Factory Water Slides</td>
+      <td>Terrifying Pirate Chase Turns into Enjoyable DoorConstructing Water Ride</td>
+      <td>Australia Beach Water slideconveyor belt in factory</td>
+      <td>219</td>
+    </tr>
+    <tr>
+      <td>08-Jun-13</td>
+      <td>Animals Help Pain Transformation Celebrities Cars</td>
+      <td>George Bush Rescues Injured Whale in Transformative Dream</td>
+      <td>No specified locations</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td>25-May-13</td>
+      <td>Education Confidence School Age Friends</td>
+      <td>Feeling Cool and Confident Older Self Back to MHS for Final Exams</td>
+      <td>MHS possibly a school Cafeteria</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td>24-May-13</td>
+      <td>Arranged Marriage Emotional Distress Ceremony Unfulfilled Expectations</td>
+      <td>Dreamer Grapples with Emotions and Expectations at Own Arranged Marriage</td>
+      <td>Not Specifically Mentioned</td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <td>22-May-13</td>
+      <td>Superheroes Video Games Body Builder Robot Female ArtDeco Online Watching</td>
+      <td>Dreamer Enthralled by ArtDeco RobotFemale Bodybuilder While Searching for Gaming Content</td>
+      <td>Not Specified</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>21-May-13</td>
+      <td>Vacation Shopping Adventure Misunderstanding Escaping</td>
+      <td>An Exotic Thai Vacation Turns into an Unexpected Adventure</td>
+      <td>Thailand Chatchais place Hotel Supermarket Bus Town Gas station</td>
+      <td>266</td>
+    </tr>
+    <tr>
+      <td>20-May-13</td>
+      <td>School PE Tennis Failure Conflict Loneliness</td>
+      <td>School Anxiety Sporting Snub and Academic Worries</td>
+      <td>School</td>
+      <td>77</td>
+    </tr>
+    <tr>
+      <td>16-May-13</td>
+      <td>Event Teacher Students Running Disagreements</td>
+      <td>The Running Event the Awkward Interaction with Daya and the Discount Issue at a Thai Restaurant in Chatchais Mall</td>
+      <td>OIS a nearby mall the trail the malls Thai restaurant and on BTS trains</td>
+      <td>229</td>
+    </tr>
+    <tr>
+      <td>10-May-13</td>
+      <td>Moving Beach Hut Swimming Supermarket Japanese Restaurant TV Filming Volunteer Party Apartment Rearrangement</td>
+      <td>An Unusual Life Back in Georgia Featuring Beach Hut Asian Cuisine TV Appearance and a Volunteer Party</td>
+      <td>Georgia Beach on an Island Supermarket Japanese Restaurant TV Studio Apartment</td>
+      <td>155</td>
+    </tr>
+    <tr>
+      <td>08-May-13</td>
+      <td>Party Attraction Infidelity Music Performance</td>
+      <td>Love triangle unfolds at a party filled with music and charm</td>
+      <td>Miramonte</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>01-May-13</td>
+      <td>Movie Politics Danger Escape Wilderness Hiding</td>
+      <td>Dreamer finds themselves in perilous political movie scene plans and executes daring wilderness escape</td>
+      <td>Wilderness Large Lake River</td>
+      <td>121</td>
+    </tr>
+    <tr>
+      <td>19-Apr-13</td>
+      <td>Dream Adventure Transformation Threat Message</td>
+      <td>Rollerblading Adventure in Myanmar Ends with Mysterious Transformation and Threatening Message</td>
+      <td>Myanmar An Unknown Beach A Winter Vacation Home</td>
+      <td>247</td>
+    </tr>
+    <tr>
+      <td>18-Apr-13</td>
+      <td>Myanmar Summer School Reunion Helicopter Ride Friends Outing</td>
+      <td>A Joyful Reunion and Adventures at Myanmar Summer School</td>
+      <td>Myanmar</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>17-Apr-13</td>
+      <td>Failure Education Stress</td>
+      <td>Academic Anxiety Takes Hold in Nightmarish Class Failure Dream</td>
+      <td>None</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>30-Mar-13</td>
+      <td>Education Stress Failure Fear</td>
+      <td>Recurring Nightmare of Class Failure and Fear of Future Consequences</td>
+      <td>No specific location mentioned</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>30-Mar-13</td>
+      <td>Education Language Culture Japanese Subway</td>
+      <td>Dreamer Engages in Linguistic Exploration</td>
+      <td>Japan Subway</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td>30-Mar-13</td>
+      <td>Recurring Guilt Embarrassment Urination</td>
+      <td>Recurring Nightmare of Uncontrolled Urination</td>
+      <td>Not Mentioned</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>28-Mar-13</td>
+      <td>School Retreat Flirting Brittany Dern Computer Kissing</td>
+      <td>Unanticipated Romance at School Retreat</td>
+      <td>School Retreat</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>27-Mar-13</td>
+      <td>Conflict Guerilla Movement Violence Fear Desertion Forgiveness</td>
+      <td>Reluctant participant in urban guerilla conflict seeks shelter and is forgiven after deserting</td>
+      <td>House Chinese Restaurant</td>
+      <td>149</td>
+    </tr>
+    <tr>
+      <td>08-Mar-13</td>
+      <td>Hiking Park Friends Toilets Mistake</td>
+      <td>Uncontrolled Urination on Hike Frustrates Dreamer</td>
+      <td>Park</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>07-Mar-13</td>
+      <td>Friends Trust Issues Accommodation</td>
+      <td>Friends Gathering Turns into Trust Issues Debate</td>
+      <td>Not mentioned</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td>06-Mar-13</td>
+      <td>Adventure Treasure Hunting Egypt Islands Waves Swimming Girls</td>
+      <td>Epic Treasure Hunting Adventure Unfolds in Dream with Mother and Larry</td>
+      <td>Egypt the two islands</td>
+      <td>102</td>
+    </tr>
+    <tr>
+      <td>05-Mar-13</td>
+      <td>Sex School Parents Guilt</td>
+      <td>Secretive Sexual Encounter in Home and School Fears Discovery</td>
+      <td>Orinda Mom and Larrys new place MHS Assuming this is a school</td>
+      <td>102</td>
+    </tr>
+    <tr>
+      <td>03-Mar-13</td>
+      <td>Old West Castle Invasion Time Travel Gun Fight Defense</td>
+      <td>Old West Castle Besieged and Defended Through Time Travel</td>
+      <td>Old West Castle</td>
+      <td>127</td>
+    </tr>
+    <tr>
+      <td>03-Mar-13</td>
+      <td>Travel Work TimePressure</td>
+      <td>Unexpected Leave from BKK due to Work Constriction</td>
+      <td>Bangkok Work place</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>03-Mar-13</td>
+      <td>Detachment Fear Body</td>
+      <td>The Night of Detachable Body Part and Fear</td>
+      <td>None mentioned</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>27-Feb-13</td>
+      <td>School Language barrier Cultural differences Disruption Support</td>
+      <td>Cultural Clash and Supportive Friendship in School Setting</td>
+      <td>Nakijin Junior High school American School of Barcelona</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>27-Feb-13</td>
+      <td>Roof Teaching George Harrisons Son Music Photography</td>
+      <td>Encounter with George Harrisons Son Leads to Photographic Frustrations in Dream Sequence</td>
+      <td>Mandalay</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <td>27-Feb-13</td>
+      <td>Nakijin students Shoshin character Office building Hide and seek Genki</td>
+      <td>Dreamer Engages in Hide and Seek Game in Office Building with Nakijin students</td>
+      <td>Office building</td>
+      <td>83</td>
+    </tr>
+    <tr>
+      <td>26-Feb-13</td>
+      <td>Party Social Interaction Romance Anxiety</td>
+      <td>Dreamer Revisits Past Party Scene Encounters Love Interest and Experiences Separation Anxiety</td>
+      <td>Davis Party</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>26-Feb-13</td>
+      <td>MUN conference Hostel Soccer game Smoking</td>
+      <td>Unexpected Outcomes at MUN Conference Leads to Disappointment</td>
+      <td>Hostel MUN conference</td>
+      <td>72</td>
+    </tr>
+    <tr>
+      <td>26-Feb-13</td>
+      <td>Friendship Attraction Discomfort Adventure</td>
+      <td>Unresolved Mall Attraction During Town Exploration</td>
+      <td>Phuket Mall</td>
+      <td>83</td>
+    </tr>
+    <tr>
+      <td>26-Feb-13</td>
+      <td>Love Affair Guilt</td>
+      <td>Flirting with Marriage Boundaries and SelfLoathing Emerge in Dream</td>
+      <td>Not specified</td>
+      <td>27</td>
+    </tr>
+  </tbody>
+</table>
+    </table>
+    
+    <!-- Your p5.js sketch will be attached here -->
+    <script src="sketch.js"></script>
+  </body>
+</html>
